@@ -1,0 +1,19 @@
+Ok, this is a notes file for the future to keep us on track
+
+- We need a javascript file that takes our database, generates a table which can act as a catalog 
+for all our products
+
+- We also need a javascript file that will generate a page so that when you click on a product
+a new page will pop up with all the product details and a button that says add to cart
+
+- We also need a javascript file that stores your cart in the database, this should be stored in
+orders and should be logged as not completed, then when you check out, it is completed and 
+becomes unchangeable, therefore the javascript should check if its uncompleted before adding to a 
+cart, if it is uncompleted, then add it, if not, then create a new cart/order
+
+- We also need a javascript file that prints out shipping details, perferably in a new page,
+idk how we do all the database interraction stuff
+
+- We should also have a javascript file that updates the password and username when people make
+them, when user hit the button shopping cart, we should immediately make them sign in, and
+that will all be handled by the script 
