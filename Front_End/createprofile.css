@@ -1,0 +1,62 @@
+
+/* Bordered form */
+form {
+    border: 1rem ;
+    border-radius: 2rem;
+    background-color: aliceblue;
+    position:absolute;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+    button{
+    color: white;
+    font: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  #submit{
+    background-color: #04AA6D;
+  }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .header{
+    text-align: center;
+  }
+  /* Add padding to containers */
+  .container {
+    padding: 26px;
+  }
+  
+  .Profile{
+    padding-top: 50px;
+  }
+
+  .address{
+    padding-top: 50px;;
+  }
+
+  .payment_info{
+    padding-top: 50px;
+  }
+
+  
+  
