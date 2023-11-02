@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 Drew Hengehold, Cossette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
+=======
+Drew Hengehold, Cosette Basto, Jaqulin Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
+>>>>>>> d079687927687f64c2f53afeca8f6caddba83fff
 CS 325 - Fall 2023
 LAST MODIFIED DATE: 02-Nov-2023
 
 SCHEMA/DESIGN:
-
