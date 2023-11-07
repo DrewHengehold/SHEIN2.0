@@ -7,14 +7,16 @@ SCHEMA/DESIGN:
 User(USER_NAME, password, user_type)
 
 Customer_Profile(CUSTOMER_ID, user_name, card_name, fname, lname, phone, email)
-    Customer_Profile(user_name) refrences User(USER_NAME)
+    Customer_Profile(user_name) refrences User
+
 
 Payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
     Payment_info(customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
-
 Address(ADDRESS_ID, customer_id, street, city, state, zip)
     Address(customer_id) refrences Customer_Profile(CUSTOMER_ID)
+
+
 
 Shipping(ADDRESS_ID, ship_instructions)
     Shipping(ADDRESS_ID) refrences Address
@@ -23,9 +25,8 @@ Billing(ADDRESS_ID, CARD_NUM)
     Billing(ADDRESS_ID) refrences Address
     Billing(CARD_NUM) refrences Payment_info
 
-Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
-    Shipment(address_id) refrences shipping
-    Shipment(order_id) refrences Order
+
+
 
 Order(ORDR_ID, customer_id, order_total, order_states, date_ordered)
     Order(customer_id) refrences Customer_Profile
@@ -33,15 +34,21 @@ Order(ORDR_ID, customer_id, order_total, order_states, date_ordered)
 Line_items(ORDER_ID, SKU, quantity, price)
     Line_items(ORDER_ID) refrences Order
     Line_items(SKU) refrences Catalog_Items
+
+Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
+    Shipment(address_id) refrences shipping
+    Shipment(order_id) refrences Order
+    
+
     
 Catalog_Items(SKU, item_name, item_description, listed_price,
               avail_quatity, gender, item_color)
 
-bottoms(SKU, waist_size, material)
-    bottoms(SKU) refrences Catalog_Items
+Bottoms(SKU, waist_size, material)
+    Bottoms(SKU) refrences Catalog_Items
 
-tops(SKU, sleeve_length, neck_line_type)
-    tops(SKU) refrences Catalog_Items
+Tops(SKU, sleeve_length, neck_line_type)
+    Tops(SKU) refrences Catalog_Items
 
-shoes(SKU, shoe_size, shoe_type)
-    shoes(SKU) refrences Catalog_Items
+Shoes(SKU, shoe_size, shoe_type)
+    Shoes(SKU) refrences Catalog_Items
