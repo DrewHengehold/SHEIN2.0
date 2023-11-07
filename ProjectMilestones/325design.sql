@@ -13,7 +13,21 @@ domain
 
 /*demo:
 --This table tells us about the catalog
-create table catalog
+*/
+create table user
 (
-    ...
+    USER_NAME    varchar2 (25),
+    password     varchar2 (45),
+    user_type    
+);
+
+create table Customer_Profile
+(
+    CUSTOMER_ID    char (8), 
+    user_name      varchar2 (25), 
+    card_name      varchar2 (45), 
+    fname          varchar2 (25), 
+    lname          varchar2 (25), 
+    phone          char (10), 
+    email          varchar2 (25)     
 );
