@@ -3,3 +3,27 @@ CS 325 - Fall 2023
 LAST MODIFIED DATE: 02-Nov-2023
 
 SCHEMA/DESIGN:
+
+User(USER_NAME, password, user_type)
+
+Customer_Profile(CUSTOMER_ID, user_name, card_name, fname, lname, phone, email)
+    Customer_Profile(user_name) refrences User(USER_NAME)
+
+Payment_info(CARD_NUM, customer_id, name_on_card, exp_date, )
+    Payment_info(customer_id) refrences Customer_Profile(CUSTOMER_ID)
+
+
+Address(ADDRESS_ID, customer_id, street, city, state, zip)
+    Address(customer_id) refrences Customer_Profile(CUSTOMER_ID)
+
+Shipping(ADDRESS_ID, ship_instructions)
+    Shipping(ADDRESS_ID) refrences Address
+
+Billing(ADDRESS_ID, billing_email)
+    Shipping(ADDRESS_ID) refrences Address
+
+
+Shipment(SHIPMENT_ID, address_id, ship_status, delivery_date)
+    shipment(address_id) refrences shipping(address_id)
+
+Order(ORDER_ID, order_total, order_states, date_ordered)
