@@ -4,15 +4,19 @@ LAST MODIFIED DATE: 02-Nov-2023
 
 SCHEMA/DESIGN:
 
+-- Coseette 
 User(USER_NAME, password, user_type)
 
 Customer_Profile(CUSTOMER_ID, user_name, card_name, fname, lname, phone, email)
     Customer_Profile(user_name) refrences User
+-- 
 
-
+--Forrest
 Payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
     Payment_info(customer_id) refrences Customer_Profile(CUSTOMER_ID)
+--
 
+--Jacky
 Address(ADDRESS_ID, customer_id, street, city, state, zip)
     Address(customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
@@ -25,22 +29,25 @@ Billing(ADDRESS_ID, CARD_NUM)
     Billing(ADDRESS_ID) refrences Address
     Billing(CARD_NUM) refrences Payment_info
 
+--
 
 
-
+--Drew
 Order(ORDR_ID, customer_id, order_total, order_states, date_ordered)
     Order(customer_id) refrences Customer_Profile
 
 Line_items(ORDER_ID, SKU, quantity, price)
     Line_items(ORDER_ID) refrences Order
     Line_items(SKU) refrences Catalog_Items
+--
 
+--Forrest
 Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     Shipment(address_id) refrences shipping
     Shipment(order_id) refrences Order
-    
+--
 
-    
+--Shyna
 Catalog_Items(SKU, item_name, item_description, listed_price,
               avail_quatity, gender, item_color)
 
@@ -52,3 +59,4 @@ Tops(SKU, sleeve_length, neck_line_type)
 
 Shoes(SKU, shoe_size, shoe_type)
     Shoes(SKU) refrences Catalog_Items
+--
