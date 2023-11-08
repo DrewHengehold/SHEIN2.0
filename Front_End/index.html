@@ -8,6 +8,7 @@
     <!--This somehow loads in a code so we can take the div from
     the navbar file, will need at top of every place we want the navigation bar-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
     <div id="navy">
         <script>
             $(function(){
@@ -15,10 +16,26 @@
             });
         </script>
     </div>
+
 </head>
 
 <body style = "background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">
 
+    <form class = "filter">
+        <form>
+            <input type="radio" id="men" name="clicker" value="Men">
+            <label for="men">Men</label>
+            <input type="radio" id="women" name="clicker" value="Women">
+            <label for="women">Women</label>
+            <input type="radio" id="Tops" name="clicker" value="Tops">
+            <label for="Tops">Tops</label>
+            <input type="radio" id="Bottoms" name="clicker" value="Bottoms">
+            <label for="Bottoms">Bottoms</label>
+            <input type="radio" id="javascript" name="clicker" value="Shoes">
+            <label for="Shoes">Shoes</label>
+            <input type="submit" value="Submit">
+          </form>
+    </form>
     <div class = "catalog">
         
     </div>
