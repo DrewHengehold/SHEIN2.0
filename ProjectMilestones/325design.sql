@@ -31,3 +31,24 @@ create table Customer_Profile
     phone          char (10), 
     email          varchar2 (25)     
 );
+
+create table Line_items(
+    ORDER_ID  char(6),
+    SKU       char(6),
+    quantity  integer,
+    price     integer,
+    primary key(ORDER_ID),
+    primary key(SKU),
+    foreign key(ORDER_ID) refrences Order(ORDER_ID),
+    foreign key(SKU) refrences Order(SKU)
+);
+
+create table Order(
+    ORDER_ID    char(6),
+    customer_id char(6),
+    order_total integer,
+    order_states ENUM('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
+    date_ordered date,
+    primary key (ORDER_ID),
+    foreign key (customer_id) refrences Customer_Profile(customer_id)
+);
