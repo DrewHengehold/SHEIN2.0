@@ -14,7 +14,15 @@
     cursor: pointer;
     padding: 5px;
 }
+.column{
+    display:flexbox;
+}
 
+.row{
+    padding-right: 15px;
+    display: flex;
+    padding-bottom: 10px;
+}
 .card{
     background-color: white;
     padding: 1px 10px;
@@ -25,12 +33,10 @@
     border:10px black;
     border-radius: 1rem;
 }
-.title_container{
-    border: 2px solid #08110e;
-
-}
 
 .descriptions{
+    border-top: 2px dashed rgb(235, 226, 226);
+    padding-top: 10px;
     font-size: medium;
     #item_gender {float: left;}
     #item_color {float:right;}
@@ -58,6 +64,7 @@
 
  
 .price{
+    border-top: 2px dashed rgb(235, 226, 226);
     color: blue;
     font-weight: bold;
     font-size: larger;
