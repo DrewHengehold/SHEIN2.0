@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="createprofile.css">
+    <title>login</title>
+</head>
+<body style="background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">
+    <div class="profileform">
+        <form action="profile.php" method="post" id="profileForm">
+            <div class="container">
+                <h1 class= "header">User Profile</h1>
+                <div class = "user">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="usernmae" required>
+                
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+            
+                <div class="Profile">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" placeholder="Enter First Name" name="fname" required>
+    
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="lname" required>
+    
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="text" placeholder="Enter Phone Number" name="phone" required>
+    
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                </div>
+               <br>
+               <br>
+               <br>
+                <div class="Shipping">
+                    <label for="address_street"><b>Shipping Address</b></label>
+                    <input type="text" placeholder="Enter Shipping Address" name="address_street" required>
+    
+                    <label for="city"><b>City</b></label>
+                    <input type="text" placeholder="Enter City" name="city" required>
+
+                    <label for="state"><b>State</b></label>
+                    <input type="text" placeholder="Enter State" name="state" required>
+
+                    <label for="zip"><b>Zip Code</b></label>
+                    <input type="text" placeholder="Enter zip" name="zip" required>
+                </div>
+                <br>
+                <br>
+                <div class="Payment">
+                    <label for="address_street"><b>Billing</b></label>
+                    <input type="text" placeholder="Enter Billing Address" name="address_street" required>
+    
+                    <label for="billing city"><b>City</b></label>
+                    <input type="text" placeholder="Enter City" name="city" required>
+
+                    <label for="billing state"><b>State</b></label>
+                    <input type="text" placeholder="Enter State" name="state" required>
+
+                    <label for="zip"><b>Zip Code</b></label>
+                    <input type="text" placeholder="Enter zip" name="zip" required>
+                </div>
+
+               <div class="payment_info">
+                    <label for="card_name"><b>Name on Card</b></label>
+                    <input type="text" placeholder="Enter Name on Card" name="card_name" required>
+
+                    <label for="card"><b>Card Number</b></label>
+                    <input type="text" placeholder="Enter Card Num" name="card" required>
+
+                    <label for="exp_date"><b>Expiration Date</b></label>
+                    <input type="date" placeholder="Enter Expiration Date" name="exp_date" required>
+
+               </div>
+
+               <button class="button" type="button" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

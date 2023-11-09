@@ -1,0 +1,41 @@
+Drew Hengehold
+Jacqueline Lyons
+Forrest Reid
+Cosette Basto
+Soran Vardanega
+Shyna Kumar
+
+325 Scenario
+
+Team Name: Shein 2.0
+
+GitHub: https://github.com/DrewHengehold/SHEIN2.0.git
+
+Last Modified: 10/19/2023
+
+Questions: 
+What’s currently in our inventory?
+What sizes do we carry for a specific item?
+What accessories do we carry?
+
+Business Rules:
+Login: 
+As this is a premium online retail site, users must first create an account in order to view products and browse the site. 
+When creating the customer profile, customers must add their payment method, mailing/ billing address, and all other components of their account before shopping. 
+Prior customer account creation enables fast and convenient service, catering to our clientele. 
+
+Catalog
+Our catalog consists of three distinct categories: Bottoms, Tops, and Shoes
+Bottoms size range: Men's small, medium, large / Women's small, medium, large
+Tops size range: small, medium, large / Women's small, medium, large
+Shoe size range: Men’s 6 through 15 / Women’s 6 through 10
+
+Shipment
+All shipments within continental U.S.
+All shipments delivered in three days expedited shipping 
+All returns must be filed within 30 days after delivery, return policy noted with order receipt
+
+Customer Profile
+Must be a member in order to shop at Shein 2.0
+All members pay a monthly fee, first billing 30 days after creating an account 
+If a member misses a payment, member will be notified, and account will be deleted within 30 days of being notified if payment is still outstanding
