@@ -33,12 +33,14 @@ Billing(ADDRESS_ID, CARD_NUM)
 
 
 --Drew
-Order(ORDR_ID, customer_id, order_total, order_states, date_ordered)
+Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
     Order(customer_id) refrences Customer_Profile
+
 
 Line_items(ORDER_ID, SKU, quantity, price)
     Line_items(ORDER_ID) refrences Order
     Line_items(SKU) refrences Catalog_Items
+
 --
 
 --Forrest
