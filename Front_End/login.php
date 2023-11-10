@@ -1,12 +1,14 @@
 <?php
-session_start();
-// Database connection details
-$host="127.0.0.1";
-$port=3306;
-$socket="";
-$user="root";
-$password="";
-$dbname="products";
+
+
+
+
+$db_conn_str = "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)
+                                           (HOST = cedar.humboldt.edu)
+                                           (PORT = 1521))
+                                       (CONNECT_DATA = (SID = STUDENT)))";
+        
+$conn = oci_connect($username, $password, $db_conn_str);
 
 // Create a database connection
 $conn = new mysqli($host, $username, $password, $database);
