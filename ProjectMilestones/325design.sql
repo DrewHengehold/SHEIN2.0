@@ -110,3 +110,17 @@ create table Shipment
     foreign key     (address_id)    references Shipping (ADDRESS_ID),
     foreign key     (order_id)      references Order (ORDER_ID)
 );
+
+
+
+
+create table shipping
+ (ship_address varchar2(45),
+  phone        char(11).
+  primary key   (ship_address)
+  );
+
+
+create table billing 
+  (billing_email varchar2(45)
+  );
