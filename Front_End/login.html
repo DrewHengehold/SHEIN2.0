@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <link rel="stylesheet" href="login.css">
     <title>login</title>
 </head>
-<body style="background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">
-    if ( ! array_key_exists("username", $_POST) ){
+
+<body style="background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">  
+    <div>
         <form action="login.php" method="post" id="loginForm">
             <div class="container">
                 <label for="uname"><b>Username</b></label>
@@ -19,6 +21,6 @@
                 <button onclick = "window.location.href = 'createprofile.html';"class="thisbutton" type="button" id="create">Create Account</button>
             </div>
         </form>
-    }
+    </div>
 </body>
 </html>
