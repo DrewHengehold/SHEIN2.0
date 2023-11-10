@@ -21,6 +21,7 @@ form {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
+    text-decoration: none;
     border: none;
     cursor: pointer;
   }

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    </style>
-     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shein2.0</title>
     <!--This somehow loads in a code so we can take the div from
     the navbar file, will need at top of every place we want the navigation bar-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
     <div id="navy">
         <script>
             $(function(){
@@ -15,12 +16,59 @@
             });
         </script>
     </div>
+
 </head>
 
 <body style = "background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">
 
+    <form class = "filter">
+        <form>
+            <input type="radio" id="men" name="clicker" value="Men">
+            <label for="men">Men</label>
+
+            <input type="radio" id="women" name="clicker" value="Women">
+            <label for="women">Women</label>
+
+            <input type="radio" id="Tops" name="clicker" value="Tops">
+            <label for="Tops">Tops</label>
+
+            <input type="radio" id="Bottoms" name="clicker" value="Bottoms">
+            <label for="Bottoms">Bottoms</label>
+
+            <input type="radio" id="javascript" name="clicker" value="Shoes">
+            <label for="Shoes">Shoes</label>
+
+            <input type="submit" class = "submit" name = "submit" value="Filter">
+          </form>
+    </form>
     <div class = "catalog">
-        
+        <div class = "column">
+            <div class = "row">
+
+                <div class = "card">
+                    <div class = "title_container" style = "border-bottom: black; border-width: 2px;">
+                        <h2 class = "item_name">Title</h3>
+                    </div>
+                    <div class = "descriptions">
+                        <div class = "item_color" id = "item_color">Red</div>
+                        <div class = "item_gender" id = "item_gender" >Male</div>
+                        <div class = "seperator"> ---------</div><br>
+                        <div class = "item_description">This is a description thsat has</div>
+                    </div>
+                    <div class = "buy-it">
+                        <h4 class = "price" id = "price">price</h2>
+                        <button class = "buy" id = "buy"> BUY </button>
+                    </div>
+    
+                    
+                </div>
+
+
+            </div>
+
+            
+         </div>
+
     </div>
 
 
