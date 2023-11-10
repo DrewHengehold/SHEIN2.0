@@ -1,19 +1,27 @@
 /*
-Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
-CS 325 - Fall 2023
-LAST MODIFIED DATE: 02-Nov-2023
+
+    Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
+    CS 325 - Fall 2023
+    LAST MODIFIED DATE: 10-Nov-2023
+
+    ---------------------------
+    PROJECT DESIGN MILESTONE #2
+    ---------------------------
+
 */
 
-/* directions:
-precede each SQL create table statement with a neat comment describing the table's purpose,
-explaining any attribute whose meaning is not immediately clear from its name, and elaborating on the
-domain of any attribute whose logical domain needs more description than is apparent from its physical
-domain
+/*
+    Drop all tables
 */
 
-/*demo:
---This table tells us about the catalog
-*/
+drop table User;
+drop table Customer_Profile;
+drop table Line_Items;
+drop table Order;
+drop table Payment_Info;
+drop table Shipment;
+drop table Shipping;
+drop table Billing;
 
 /*
     Table: User
@@ -82,6 +90,7 @@ create table Order
     Desc: Holds user's card info and email for billing info to be sent to.
     References: Customer_Profile.
 */
+
 create table Payment_Info
 (
     CARD_NUM        char (16), 
