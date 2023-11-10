@@ -24,7 +24,7 @@ create table User
 (
     USER_NAME       varchar2 (25),
     password        varchar2 (25),
-    user_type       ENUM('ADMIN', 'CUSTOMER')
+    user_type       ENUM ('ADMIN', 'CUSTOMER')
 );
 
 /*
@@ -51,14 +51,13 @@ create table Customer_Profile
 
 create table Line_Items
 (
-    ORDER_ID        char(6),
-    SKU             char(6),
+    ORDER_ID        char (6),
+    SKU             char (6),
     quantity        integer,
     price           integer,
-    primary key     (ORDER_ID),
-    primary key     (SKU),
-    foreign key     (ORDER_ID)      references Order(ORDER_ID),
-    foreign key     (SKU)           references Catalog(SKU)
+    primary key     (ORDER_ID, SKU),
+    foreign key     (ORDER_ID)      references Order (ORDER_ID),
+    foreign key     (SKU)           references Catalog (SKU)
 );
 
 /*
@@ -69,13 +68,13 @@ create table Line_Items
 
 create table Order
 (
-    ORDER_ID        char(6),
-    customer_id     char(6),
+    ORDER_ID        char (6),
+    customer_id     char (6),
     order_total     number,
-    order_states    ENUM('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
+    order_states    ENUM ('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
     date_ordered    date,
     primary key     (ORDER_ID),
-    foreign key     (customer_id)   references Customer_Profile(CUSTOMER_ID)
+    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
 );
 
 /*
@@ -111,16 +110,32 @@ create table Shipment
     foreign key     (order_id)      references Order (ORDER_ID)
 );
 
+/*
+    Table: Shipping
+    Desc: Tracks shipping instructions for a given address. 
+    References: Address.
+*/
 
+create table Shipping
+ (
+    ADDRESS_ID      char (6),
+    instructions    varchar2 (45),
+    primary key     (ADDRESS_ID),
+    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID)
 
-
-create table shipping
- (ship_address varchar2(45),
-  phone        char(11).
-  primary key   (ship_address)
   );
 
+/*
+    Table: Billing
+    Desc: Stores billing information. 
+    References: Address, Payment_Info.
+*/
 
-create table billing 
-  (billing_email varchar2(45)
+create table Billing 
+  (
+    ADDRESS_ID      varchar2 (25),
+    CARD_NUM        char (16),
+    primary key     (ADDRESS_ID, CARD_NUM),
+    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID),
+    foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
   );
