@@ -115,12 +115,24 @@ create table Shipment
 
 
 create table shipping
- (ship_address varchar2(45),
+ (
+  ship_address varchar2(45),
   phone        char(11).
   primary key   (ship_address)
-  );
+ );
 
 
 create table billing 
-  (billing_email varchar2(45)
+  (
+    billing_email varchar2(45)
   );
+
+create table address
+(
+    ADDRESS_ID   char(6),
+    street       char(6),
+    city         varchar(25),
+    us_state       char(6),
+    zip          char(5),
+    primary key   (ADDRESS_ID)
+);
