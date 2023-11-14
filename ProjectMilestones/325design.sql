@@ -148,3 +148,14 @@ create table Billing
     foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID),
     foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
   );
+
+
+create table address
+(
+    ADDRESS_ID   char(6),
+    street       char(6),
+    city         varchar(25),
+    us_state       char(6),
+    zip          char(5),
+    primary key   (ADDRESS_ID)
+);
