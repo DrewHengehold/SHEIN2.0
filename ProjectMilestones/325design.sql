@@ -1,19 +1,27 @@
 /*
-Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
-CS 325 - Fall 2023
-LAST MODIFIED DATE: 02-Nov-2023
+
+    Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
+    CS 325 - Fall 2023
+    LAST MODIFIED DATE: 10-Nov-2023
+
+    ---------------------------
+    PROJECT DESIGN MILESTONE #2
+    ---------------------------
+
 */
 
-/* directions:
-precede each SQL create table statement with a neat comment describing the table's purpose,
-explaining any attribute whose meaning is not immediately clear from its name, and elaborating on the
-domain of any attribute whose logical domain needs more description than is apparent from its physical
-domain
+/*
+    Drop all tables
 */
 
-/*demo:
---This table tells us about the catalog
-*/
+drop table User;
+drop table Customer_Profile;
+drop table Line_Items;
+drop table Order;
+drop table Payment_Info;
+drop table Shipment;
+drop table Shipping;
+drop table Billing;
 
 /*
     Table: User
@@ -24,7 +32,7 @@ create table User
 (
     USER_NAME       varchar2 (25),
     password        varchar2 (25),
-    user_type       ENUM('ADMIN', 'CUSTOMER')
+    user_type       ENUM ('ADMIN', 'CUSTOMER')
 );
 
 /*
@@ -51,14 +59,13 @@ create table Customer_Profile
 
 create table Line_Items
 (
-    ORDER_ID        char(6),
-    SKU             char(6),
+    ORDER_ID        char (6),
+    SKU             char (6),
     quantity        integer,
     price           integer,
-    primary key     (ORDER_ID),
-    primary key     (SKU),
-    foreign key     (ORDER_ID)      references Order(ORDER_ID),
-    foreign key     (SKU)           references Catalog(SKU)
+    primary key     (ORDER_ID, SKU),
+    foreign key     (ORDER_ID)      references Order (ORDER_ID),
+    foreign key     (SKU)           references Catalog (SKU)
 );
 
 /*
@@ -69,13 +76,13 @@ create table Line_Items
 
 create table Order
 (
-    ORDER_ID        char(6),
-    customer_id     char(6),
+    ORDER_ID        char (6),
+    customer_id     char (6),
     order_total     number,
-    order_states    ENUM('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
+    order_states    ENUM ('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
     date_ordered    date,
     primary key     (ORDER_ID),
-    foreign key     (customer_id)   references Customer_Profile(CUSTOMER_ID)
+    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
 );
 
 /*
@@ -83,6 +90,7 @@ create table Order
     Desc: Holds user's card info and email for billing info to be sent to.
     References: Customer_Profile.
 */
+
 create table Payment_Info
 (
     CARD_NUM        char (16), 
@@ -111,21 +119,36 @@ create table Shipment
     foreign key     (order_id)      references Order (ORDER_ID)
 );
 
+/*
+    Table: Shipping
+    Desc: Tracks shipping instructions for a given address. 
+    References: Address.
+*/
 
-
-
-create table shipping
+create table Shipping
  (
-  ship_address varchar2(45),
-  phone        char(11).
-  primary key   (ship_address)
- );
+    ADDRESS_ID      char (6),
+    instructions    varchar2 (45),
+    primary key     (ADDRESS_ID),
+    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID)
 
-
-create table billing 
-  (
-    billing_email varchar2(45)
   );
+
+/*
+    Table: Billing
+    Desc: Stores billing information. 
+    References: Address, Payment_Info.
+*/
+
+create table Billing 
+  (
+    ADDRESS_ID      varchar2 (25),
+    CARD_NUM        char (16),
+    primary key     (ADDRESS_ID, CARD_NUM),
+    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID),
+    foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
+  );
+
 
 create table address
 (
