@@ -159,3 +159,4 @@ create table address
     zip          char(5),
     primary key   (ADDRESS_ID)
 );
+
