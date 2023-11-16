@@ -159,3 +159,55 @@ create table address
     zip          char(5),
     primary key   (ADDRESS_ID)
 );
+
+Create table catalog_items
+(sku                           char(8),               
+ Item_name                varchar2(10),
+ Item_description        varchar2(40),
+ Listed_price                decimal(5,2),
+Avail_quantity               integer,
+ Gender                        char(1)             check(gender in (‘W’, ‘M’),
+Item-color                     varchar2(10),
+Primary key                  (sku)
+);
+
+
+Create table bottoms 
+(waist_size           decimal(3,1),
+  Material               varchar2(15),
+  Sku                      char(8),
+  Primary key         (sku),
+  Foreign key          (sku) references catalog_item
+);
+
+
+
+Create table tops
+(top_size                  char(1)     check(top_size in (‘S’, ‘M’, ‘L’),
+ Sleeve_length         varchar2(10),         
+ Sku                          char(8),
+ Neckline_type         varchar2(10),
+ Primary key             (sku),
+ Foreign key              (sku) references catalog_item
+);
+
+
+Create table shoes
+(shoe_size                decimal(3,1),
+ Shoe_type               varchar2(15),
+ Sku                           char(8),
+ Primary key              (sku),
+ Foreign key              (sku)  references catalog_item 
+);
+
+
+
+
+
+
+
+
+
+
+
+
