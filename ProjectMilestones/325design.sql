@@ -183,9 +183,9 @@ Create table bottoms
 
 
 Create table tops
-(top_size                  char(1)     check(top_size in (‘S’, ‘M’, ‘L’),
+(top_size              char(1)     check(top_size in (‘S’, ‘M’, ‘L’),
  Sleeve_length         varchar2(10),         
- Sku                          char(8),
+ Sku                     char(8),
  Neckline_type         varchar2(10),
  Primary key             (sku),
  Foreign key              (sku) references catalog_item
