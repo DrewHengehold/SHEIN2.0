@@ -14,14 +14,19 @@
     Drop all tables
 */
 
-drop table User;
-drop table Customer_Profile;
-drop table Line_Items;
-drop table Order;
-drop table Payment_Info;
-drop table Shipment;
-drop table Shipping;
-drop table Billing;
+drop table User                 cascade constraints;
+drop table Customer_Profile     cascade constraints;
+drop table Line_Items           cascade constraints;
+drop table Order                cascade constraints;
+drop table Payment_Info         cascade constraints;
+drop table Shipment             cascade constraints;
+drop table Shipping             cascade constraints;
+drop table Billing              cascade constraints;
+drop table Address              cascade constraints;
+drop table Catalog_Items        cascade constraints;
+drop table Bottoms              cascade constraints;
+drop table Tops                 cascade constraints;
+drop table Shoes                cascade constraints;
 
 /*
     Table: User
@@ -149,65 +154,80 @@ create table Billing
     foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
   );
 
+/*
+    Table: Address
+    Desc: Stores user's address info. 
+*/
 
-create table address
+create table Address
 (
-    ADDRESS_ID   char(6),
-    street       char(6),
-    city         varchar(25),
-    us_state       char(6),
-    zip          char(5),
-    primary key   (ADDRESS_ID)
+    ADDRESS_ID      char(6),
+    street          char(6),
+    city            varchar(25),
+    us_state        char(6),
+    zip             char(5),
+    primary key     (ADDRESS_ID)
 );
 
-Create table catalog_items
-(sku                           char(8),               
- Item_name                varchar2(10),
- Item_description        varchar2(40),
- Listed_price                decimal(5,2),
-Avail_quantity               integer,
- Gender                        char(1)             check(gender in (‘W’, ‘M’),
-Item-color                     varchar2(10),
-Primary key                  (sku)
+/*
+    Table: Catalog_Items
+    Desc: Stores user's address info. 
+*/
+
+Create table Catalog_Items
+(
+    sku             char(8),               
+    Item_name       varchar2(10),
+    Item_desc       varchar2(40),
+    Listed_price    decimal(5,2),
+    Avail_quantity  integer,
+    Gender          ENUM('W', 'M'),
+    Item-color      varchar2(10),
+    primary key     (sku)
 );
 
+/*
+    Table: Bottoms
+    Desc: Stores bottoms catalog info. 
+    References: Catalog_Items.
+*/
 
-Create table bottoms 
-(waist_size           decimal(3,1),
-  Material               varchar2(15),
-  Sku                      char(8),
-  Primary key         (sku),
-  Foreign key          (sku) references catalog_item
+Create table Bottoms 
+(
+    waist_size      decimal(3,1),
+    material        varchar2(15),
+    SKU             char(8),
+    primary key     (SKU),
+    foreign key     (SKU)           references Catalog_Items
 );
 
+/*
+    Table: Tops
+    Desc: Stores tops catalog info. 
+    References: Catalog_Items.
+*/
 
-
-Create table tops
-(top_size              char(1)     check(top_size in (‘S’, ‘M’, ‘L’),
- Sleeve_length         varchar2(10),         
- Sku                     char(8),
- Neckline_type         varchar2(10),
- Primary key             (sku),
- Foreign key              (sku) references catalog_item
+Create table Tops
+(
+    top_size        ENUM('S', 'M', 'L'),
+    sleeve_length   varchar2(10),         
+    SKU             char(8),
+    neckline_type   varchar2(10),
+    primary key     (SKU),
+    foreign key     (SKU)           references Catalog_Items
 );
 
+/*
+    Table: Shoes
+    Desc: Stores shoe catalog info . 
+    References: Catalog_Items.
+*/
 
-Create table shoes
-(shoe_size                decimal(3,1),
- Shoe_type               varchar2(15),
- Sku                           char(8),
- Primary key              (sku),
- Foreign key              (sku)  references catalog_item 
+Create table Shoes
+(
+    shoe_size       decimal(3,1),
+    Shoe_type       varchar2(15),
+    SKU             char(8),
+    primary key     (SKU),
+    foreign key     (SKU)           references Catalog_Items 
 );
-
-
-
-
-
-
-
-
-
-
-
-
