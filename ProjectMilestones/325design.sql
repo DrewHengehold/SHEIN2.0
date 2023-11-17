@@ -2,7 +2,7 @@
 
     Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
     CS 325 - Fall 2023
-    LAST MODIFIED DATE: 10-Nov-2023
+    LAST MODIFIED DATE: 17-Nov-2023
 
     ---------------------------
     PROJECT DESIGN MILESTONE #2
@@ -53,7 +53,93 @@ create table Customer_Profile
     fname           varchar2 (25), 
     lname           varchar2 (25), 
     phone           char (10), 
-    email           varchar2 (25)     
+    email           varchar2 (25),
+    Customer_Profile    (user_name) refrences User(USER_NAME)
+);
+
+
+/*
+    Table: Payment_Info
+    Desc: Holds user's card info and email for billing info to be sent to.
+    References: Customer_Profile.
+*/
+
+create table Payment_Info
+(
+    CARD_NUM        char (16), 
+    customer_id     char (6), 
+    name_on_card    varchar2 (25) not null, 
+    exp_date        varchar2 (25) not null, 
+    billing_email   varchar2 (25),
+    primary key     (CARD_NUM),
+    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
+);
+
+
+
+/*
+    Table: Address
+    Desc: Stores user's address info. 
+*/
+
+create table Address
+(
+    ADDRESS_ID      char(6),
+    customer_id     char(6),
+    street          char(6),
+    city            varchar(25),
+    us_state        char(6),
+    zip             char(5),
+    primary key     (ADDRESS_ID),
+    foreign key     (customer_id) refrences Customer_Profile(CUSTOMER_ID)
+);
+
+
+/*
+    Table: Shipping
+    Desc: Tracks shipping instructions for a given address. 
+    References: Address.
+*/
+
+create table Shipping
+ (
+    ADDRESS_ID      char (6),
+    ship_instructions    varchar2 (45),
+    primary key     (ADDRESS_ID),
+    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID)
+
+  );
+
+/*
+    Table: Billing
+    Desc: Stores billing information. 
+    References: Address, Payment_Info.
+*/
+
+create table Billing 
+  (
+    ADDRESS_ID      varchar2 (25),
+    CARD_NUM        char (16),
+    primary key     (ADDRESS_ID, CARD_NUM),
+    foreign key     (ADDRESS_ID)    references Address(ADDRESS_ID),
+    foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
+  );
+
+/*
+    Table: Order
+    Desc: Tracks order's status and order date. 
+    References: Customer_Profile.
+*/
+
+create table Order
+(
+    ORDER_ID        char (6),
+    customer_id     char (6),
+    order_total     number,
+    order_states    ENUM ('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
+    date_ordered    date,
+    primary key     (ORDER_ID),
+    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
 );
 
 /*
@@ -74,40 +160,6 @@ create table Line_Items
 );
 
 /*
-    Table: Order
-    Desc: Tracks order's status and order date. 
-    References: Customer_Profile.
-*/
-
-create table Order
-(
-    ORDER_ID        char (6),
-    customer_id     char (6),
-    order_total     number,
-    order_states    ENUM ('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
-    date_ordered    date,
-    primary key     (ORDER_ID),
-    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
-);
-
-/*
-    Table: Payment_Info
-    Desc: Holds user's card info and email for billing info to be sent to.
-    References: Customer_Profile.
-*/
-
-create table Payment_Info
-(
-    CARD_NUM        char (16), 
-    customer_id     char (6), 
-    name_on_card    varchar2 (25) not null, 
-    exp_date        varchar2 (25) not null, 
-    billing_email   varchar2 (25),
-    primary key     (CARD_NUM),
-    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
-);
-
-/*
     Table: Shipment
     Desc: Tracks shipment's status and delivery date. 
     References: Order, Shipment.
@@ -125,65 +177,20 @@ create table Shipment
 );
 
 /*
-    Table: Shipping
-    Desc: Tracks shipping instructions for a given address. 
-    References: Address.
-*/
-
-create table Shipping
- (
-    ADDRESS_ID      char (6),
-    instructions    varchar2 (45),
-    primary key     (ADDRESS_ID),
-    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID)
-
-  );
-
-/*
-    Table: Billing
-    Desc: Stores billing information. 
-    References: Address, Payment_Info.
-*/
-
-create table Billing 
-  (
-    ADDRESS_ID      varchar2 (25),
-    CARD_NUM        char (16),
-    primary key     (ADDRESS_ID, CARD_NUM),
-    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID),
-    foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
-  );
-
-/*
-    Table: Address
-    Desc: Stores user's address info. 
-*/
-
-create table Address
-(
-    ADDRESS_ID      char(6),
-    street          char(6),
-    city            varchar(25),
-    us_state        char(6),
-    zip             char(5),
-    primary key     (ADDRESS_ID)
-);
-
-/*
     Table: Catalog_Items
     Desc: Stores user's address info. 
 */
 
 Create table Catalog_Items
 (
-    sku             char(8),               
-    Item_name       varchar2(10),
-    Item_desc       varchar2(40),
-    Listed_price    decimal(5,2),
-    Avail_quantity  integer,
-    Gender          ENUM('W', 'M'),
-    Item-color      varchar2(10),
-    primary key     (sku)
+    SKU             char(8),               
+    item_name       varchar2(25),
+    item_desc       varchar2(40),
+    listed_price    decimal(5,2),
+    avail_quantity  integer,
+    gender          ENUM('W', 'M'),
+    item-color      varchar2(10),
+    primary key     (SKU)
 );
 
 /*
@@ -198,7 +205,7 @@ Create table Bottoms
     material        varchar2(15),
     SKU             char(8),
     primary key     (SKU),
-    foreign key     (SKU)           references Catalog_Items
+    foreign key     (SKU) references Catalog_Items (SKU)
 );
 
 /*
@@ -210,11 +217,11 @@ Create table Bottoms
 Create table Tops
 (
     top_size        ENUM('S', 'M', 'L'),
-    sleeve_length   varchar2(10),         
+    sleeve_length   ENUM('Long', 'Short'),         
     SKU             char(8),
     neckline_type   varchar2(10),
     primary key     (SKU),
-    foreign key     (SKU)           references Catalog_Items
+    foreign key     (SKU) references Catalog_Items (SKU)
 );
 
 /*
@@ -226,8 +233,8 @@ Create table Tops
 Create table Shoes
 (
     shoe_size       decimal(3,1),
-    Shoe_type       varchar2(15),
+    shoe_type       varchar2(15),
     SKU             char(8),
     primary key     (SKU),
-    foreign key     (SKU)           references Catalog_Items 
+    foreign key     (SKU) references Catalog_Items (SKU)
 );

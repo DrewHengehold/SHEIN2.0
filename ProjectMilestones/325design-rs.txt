@@ -4,7 +4,6 @@ LAST MODIFIED DATE: 02-Nov-2023
 
 SCHEMA/DESIGN:
 
-
 User(USER_NAME, password, user_type)
 
 Customer_Profile(CUSTOMER_ID, user_name, card_name, fname, lname, phone, email)
@@ -40,16 +39,14 @@ Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     Shipment(address_id) refrences shipping
     Shipment(order_id) refrences Order
 
---Shyna
 Catalog_Items(SKU, item_name, item_description, listed_price,
               avail_quatity, gender, item_color)
 
 Bottoms(SKU, waist_size, material)
     Bottoms(SKU) refrences Catalog_Items
 
-Tops(SKU, sleeve_length, neck_line_type)
+Tops(SKU, top_size, sleeve_length, neck_line_type)
     Tops(SKU) refrences Catalog_Items
 
 Shoes(SKU, shoe_size, shoe_type)
     Shoes(SKU) refrences Catalog_Items
---
