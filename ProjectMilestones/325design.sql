@@ -37,7 +37,8 @@ create table User
 (
     USER_NAME       varchar2 (25),
     password        varchar2 (25),
-    user_type       ENUM ('ADMIN', 'CUSTOMER')
+    user_type       ENUM ('ADMIN', 'CUSTOMER'),
+    primary key (USER_NAME)
 );
 
 /*
