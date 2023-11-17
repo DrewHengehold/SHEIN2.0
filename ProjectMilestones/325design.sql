@@ -55,7 +55,8 @@ create table Customer_Profile
     lname           varchar2 (25), 
     phone           char (10), 
     email           varchar2 (25),
-    Customer_Profile    (user_name) refrences User(USER_NAME)
+    foreign key    (user_name) refrences User(USER_NAME),
+    foreign key    (card_num) refrences Payment_Info(CARD_NUM)
 );
 
 
