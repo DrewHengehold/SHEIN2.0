@@ -50,7 +50,7 @@ create table Customer_Profile
 (
     CUSTOMER_ID     char (6), 
     user_name       varchar2 (25), 
-    card_name       varchar2 (25), 
+    card_num       varchar2 (25), 
     fname           varchar2 (25), 
     lname           varchar2 (25), 
     phone           char (10), 
