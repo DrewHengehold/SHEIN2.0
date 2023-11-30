@@ -50,13 +50,12 @@ create table Customer_Profile
 (
     CUSTOMER_ID     char (6), 
     user_name       varchar2 (25), 
-    card_num       varchar2 (25), 
     fname           varchar2 (25), 
     lname           varchar2 (25), 
     phone           char (10), 
     email           varchar2 (25),
-    foreign key    (user_name) refrences User(USER_NAME),
-    foreign key    (card_num) refrences Payment_Info(CARD_NUM)
+    primary key( CUSTOMER_ID)
+    foreign key    (user_name) refrences User(USER_NAME)
 );
 
 
