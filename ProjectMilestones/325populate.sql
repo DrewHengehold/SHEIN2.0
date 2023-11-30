@@ -11,49 +11,49 @@
 */
 
 insert into user
-values(forrest_reid, ForestIsTheBest, 'ADMIN');
+values('forrest_reid', 'ForestIsTheBest', 'ADMIN');
 
 insert into user
-values(drew_hengehold, DrewIsTheBest, 'ADMIN');
+values('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
 insert into user
-values(cossette_bast, CossetteIsTheBest, 'ADMIN');
+values('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
 
 insert into user
-values(shyna_kumar, ShynaIsTheBest, 'ADMIN');
+values('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
 
 insert into user
-values(jacky_lyons, JackyIsTheBest, 'ADMIN');
+values('jacky_lyons', 'JackyIsTheBest', 'ADMIN');
 
 insert into user
-values(soran_vardanega, SoranIsTheBest, 'ADMIN');
+values('soran_vardanega', 'SoranIsTheBest', 'ADMIN');
 
 insert into user
-values(john_doe, ZionNational, 'CUSTOMER');
+values('john_doe', 'ZionNational', 'CUSTOMER');
 
 insert into user
-values(jane_smith, ILoveCats, 'CUSTOMER');
+values('jane_smith', 'ILoveCats', 'CUSTOMER');
 
 insert into user
-values(bob_jones, ILoveDogs, 'CUSTOMER');
+values('bob_jones', 'ILoveDogs', 'CUSTOMER');
 
 insert into user
-values(micheal_brown, BrownBerkely, 'CUSTOMER');
+values('micheal_brown', 'BrownBerkely', 'CUSTOMER');
 
 insert into user
-values(william_black, BlackChicago, 'CUSTOMER');
+values('william_black', 'BlackChicago', 'CUSTOMER');
 
 insert into user
-values(lisa_jackson, JacksonNYC, 'CUSTOMER');
+values('lisa_jackson', 'JacksonNYC', 'CUSTOMER');
 
 insert into user
-values(ryan_taylor, Taylor13#, 'CUSTOMER');
+values('ryan_taylor', 'Taylor13#', 'CUSTOMER');
 
 insert into user
-values(susan_white, WhiteTheColor, 'CUSTOMER');
+values('susan_white', 'WhiteTheColor', 'CUSTOMER');
 
 insert into user
-values(emily_green, GreenTheApple, 'CUSTOMER');
+values('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
     forrest - Insert into customer profiles
@@ -148,3 +148,161 @@ VALUES ('1010101010101010', 'CUST13', 'Noah Taylor', '04/23', 'noah@example.com'
 
 INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
 VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
+
+/*
+ Cosette - Shipping info Insert statements 
+*/
+insert into shipping
+values
+( '111111', 'N/A');
+
+insert into shipping 
+values 
+('222222', 'Leave at door'); 
+
+insert into shipping 
+values 
+('333333', 'Leave at gate'); 
+
+insert into shipping 
+values 
+('444444', 'N/A');
+
+insert into shipping 
+values 
+('555555', 'Leave by mailbox'); 
+
+insert into shipping 
+values 
+('666666', 'Leave at door');
+
+insert into shipping 
+values 
+('777777', 'Leave on stair'); 
+
+insert into shipping 
+values 
+('888888', 'N/A');
+
+insert into shipping 
+values 
+('999999', 'N/A');
+
+insert into shipping 
+values 
+('121212', 'Leave by fence');    
+
+insert into shipping 
+values 
+('131313', 'Leave on stair');
+
+insert into shipping 
+values 
+('141414', 'Leave at door');
+
+insert into shipping 
+values 
+('151515', 'N/A');
+
+insert into shipping 
+values 
+('161616', 'Leave on stair');    
+
+insert into shipping 
+values 
+('171717', 'Leave by fence');
+ 
+
+/*
+   Shyna catalog insert statements
+*/
+
+insert into catalog
+values
+('BG011AAB', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Blue');
+
+insert into catalog
+values
+('BG011ABC', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Blue');
+
+insert into catalog
+values
+('BG011ACD', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Black');
+
+insert into catalog
+values
+('BG011ADE', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Black');
+
+insert into catalog
+values
+('BG011AEF', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'White');
+
+insert into catalog
+values
+('BG011AFG', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'White');
+
+insert into catalog
+values
+('BG011AGH', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Brown');
+
+insert into catalog
+values
+('BG011AHI', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Brown');
+
+
+insert into catalog
+values
+('TG011AAB', 'Tops', 'Basic casual fit', 5.99, 25, 'W', 'White');
+
+insert into catalog
+values
+('TG011ABC', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'White');
+
+
+insert into catalog
+values
+('TG011ACD', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Red');
+
+
+insert into catalog
+values
+('TG011ADE', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Red');
+
+
+insert into catalog
+values
+('TG011AEF', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Black');
+
+
+insert into catalog
+values
+('TG011AFG', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Balck');
+
+insert into catalog
+values
+('TG011AGH', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Blue');
+
+
+insert into catalog
+values
+('TG011AHI', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Blue');
+
+
+insert into catalog
+values
+('SG011AAB', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'Black');
+
+
+insert into catalog
+values
+('SG011AABC', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'Black');
+
+insert into catalog
+values
+('SG011ACD', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'White');
+
+insert into catalog
+values
+('SG011AADE', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'White');
+
+
