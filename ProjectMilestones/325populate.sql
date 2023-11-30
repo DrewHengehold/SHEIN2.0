@@ -23,7 +23,7 @@ insert into user
 values(shyna_kumar, ShynaIsTheBest, 'ADMIN');
 
 insert into user
-values(jacky_reid, JackyIsTheBest, 'ADMIN');
+values(jacky_lyons, JackyIsTheBest, 'ADMIN');
 
 insert into user
 values(soran_vardanega, SoranIsTheBest, 'ADMIN');
