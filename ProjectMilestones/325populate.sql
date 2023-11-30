@@ -148,3 +148,103 @@ VALUES ('1010101010101010', 'CUST13', 'Noah Taylor', '04/23', 'noah@example.com'
 
 INSERT INTO Payment_Info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
 VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
+
+
+
+
+/*
+   Shyna catalog insert statements
+*/
+
+
+
+
+insert into catalog
+values
+('BG011AAB', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Blue');
+
+insert into catalog
+values
+('BG011ABC', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Blue');
+
+insert into catalog
+values
+('BG011ACD', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Black');
+
+insert into catalog
+values
+('BG011ADE', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Black');
+
+insert into catalog
+values
+('BG011AEF', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'White');
+
+insert into catalog
+values
+('BG011AFG', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'White');
+
+insert into catalog
+values
+('BG011AGH', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Brown');
+
+insert into catalog
+values
+('BG011AHI', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Brown');
+
+
+insert into catalog
+values
+('TG011AAB', 'Tops', 'Basic casual fit', 5.99, 25, 'W', 'White');
+
+insert into catalog
+values
+('TG011ABC', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'White');
+
+
+insert into catalog
+values
+('TG011ACD', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Red');
+
+
+insert into catalog
+values
+('TG011ADE', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Red');
+
+
+insert into catalog
+values
+('TG011AEF', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Black');
+
+
+insert into catalog
+values
+('TG011AFG', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Balck');
+
+insert into catalog
+values
+('TG011AGH', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Blue');
+
+
+insert into catalog
+values
+('TG011AHI', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Blue');
+
+
+insert into catalog
+values
+('SG011AAB', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'Black');
+
+
+insert into catalog
+values
+('SG011AABC', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'Black');
+
+insert into catalog
+values
+('SG011ACD', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'White');
+
+insert into catalog
+values
+('SG011AADE', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'White');
+
+
