@@ -6,9 +6,8 @@ SCHEMA/DESIGN:
 
 User(USER_NAME, password, user_type)
 
-Customer_Profile(CUSTOMER_ID, user_name, card_num, fname, lname, phone, email)
+Customer_Profile(CUSTOMER_ID, user_name, fname, lname, phone, email)
     foreign key (user_name) refrences User
-    foreign key (card_num) refrences Payment_Info(CARD_NUM)
 
 
 Payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
