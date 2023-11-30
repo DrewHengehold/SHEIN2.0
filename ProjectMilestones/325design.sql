@@ -38,7 +38,7 @@ create table User
     USER_NAME       varchar2 (25),
     password        varchar2 (25),
     user_type       ENUM ('ADMIN', 'CUSTOMER'),
-    primary key (USER_NAME)
+    primary key     (USER_NAME)
 );
 
 /*
@@ -54,7 +54,7 @@ create table Customer_Profile
     lname           varchar2 (25), 
     phone           char (10), 
     email           varchar2 (25),
-    primary key( CUSTOMER_ID)
+    primary key     (CUSTOMER_ID)
     foreign key    (user_name) refrences User(USER_NAME)
 );
 
