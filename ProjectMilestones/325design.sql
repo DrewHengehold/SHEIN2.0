@@ -199,15 +199,3 @@ Create table shoes
  Primary key              (sku),
  Foreign key              (sku)  references catalog_item 
 );
-
-
-
-
-
-
-
-
-
-
-
-
