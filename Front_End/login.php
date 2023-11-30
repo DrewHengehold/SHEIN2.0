@@ -8,7 +8,7 @@ $db_conn_str = "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)
                                            (PORT = 1521))
                                        (CONNECT_DATA = (SID = STUDENT)))";
         
-$conn = oci_connect($username, $password, $db_conn_str);
+$conn = oci_connect('cedar.humboldt.edu', '', $db_conn_str);
 
 // Create a database connection
 $conn = new mysqli($host, $username, $password, $database);
