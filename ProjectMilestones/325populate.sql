@@ -148,3 +148,67 @@ VALUES ('1010101010101010', 'CUST13', 'Noah Taylor', '04/23', 'noah@example.com'
 
 INSERT INTO Payment_Info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
 VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
+
+/*
+ Cosette - Shipping info Insert statements 
+*/
+insert into shipping
+values
+( '111111', 'N/A');
+
+insert into shipping 
+values 
+('222222', 'Leave at door'); 
+
+insert into shipping 
+values 
+('333333', 'Leave at gate'); 
+
+insert into shipping 
+values 
+('444444', 'N/A');
+
+insert into shipping 
+values 
+('555555', 'Leave by mailbox'); 
+
+insert into shipping 
+values 
+('666666', 'Leave at door');
+
+insert into shipping 
+values 
+('777777', 'Leave on stair'); 
+
+insert into shipping 
+values 
+('888888', 'N/A');
+
+insert into shipping 
+values 
+('999999', 'N/A');
+
+insert into shipping 
+values 
+('121212', 'Leave by fence');    
+
+insert into shipping 
+values 
+('131313', 'Leave on stair');
+
+insert into shipping 
+values 
+('141414', 'Leave at door');
+
+insert into shipping 
+values 
+('151515', 'N/A');
+
+insert into shipping 
+values 
+('161616', 'Leave on stair');    
+
+insert into shipping 
+values 
+('171717', 'Leave by fence');
+ 
