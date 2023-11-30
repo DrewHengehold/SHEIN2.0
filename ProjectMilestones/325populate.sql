@@ -11,49 +11,49 @@
 */
 
 insert into user
-values(forrest_reid, ForestIsTheBest, 'ADMIN');
+values('forrest_reid', 'ForestIsTheBest', 'ADMIN');
 
 insert into user
-values(drew_hengehold, DrewIsTheBest, 'ADMIN');
+values('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
 insert into user
-values(cossette_bast, CossetteIsTheBest, 'ADMIN');
+values('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
 
 insert into user
-values(shyna_kumar, ShynaIsTheBest, 'ADMIN');
+values('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
 
 insert into user
-values(jacky_lyons, JackyIsTheBest, 'ADMIN');
+values('jacky_lyons', 'JackyIsTheBest', 'ADMIN');
 
 insert into user
-values(soran_vardanega, SoranIsTheBest, 'ADMIN');
+values('soran_vardanega', 'SoranIsTheBest', 'ADMIN');
 
 insert into user
-values(john_doe, ZionNational, 'CUSTOMER');
+values('john_doe', 'ZionNational', 'CUSTOMER');
 
 insert into user
-values(jane_smith, ILoveCats, 'CUSTOMER');
+values('jane_smith', 'ILoveCats', 'CUSTOMER');
 
 insert into user
-values(bob_jones, ILoveDogs, 'CUSTOMER');
+values('bob_jones', 'ILoveDogs', 'CUSTOMER');
 
 insert into user
-values(micheal_brown, BrownBerkely, 'CUSTOMER');
+values('micheal_brown', 'BrownBerkely', 'CUSTOMER');
 
 insert into user
-values(william_black, BlackChicago, 'CUSTOMER');
+values('william_black', 'BlackChicago', 'CUSTOMER');
 
 insert into user
-values(lisa_jackson, JacksonNYC, 'CUSTOMER');
+values('lisa_jackson', 'JacksonNYC', 'CUSTOMER');
 
 insert into user
-values(ryan_taylor, Taylor13#, 'CUSTOMER');
+values('ryan_taylor', 'Taylor13#', 'CUSTOMER');
 
 insert into user
-values(susan_white, WhiteTheColor, 'CUSTOMER');
+values('susan_white', 'WhiteTheColor', 'CUSTOMER');
 
 insert into user
-values(emily_green, GreenTheApple, 'CUSTOMER');
+values('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
     forrest - Insert into customer profiles
@@ -213,15 +213,9 @@ values
 ('171717', 'Leave by fence');
  
 
-
-
-
 /*
    Shyna catalog insert statements
 */
-
-
-
 
 insert into catalog
 values
