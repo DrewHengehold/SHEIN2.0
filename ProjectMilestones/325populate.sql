@@ -219,11 +219,11 @@ values
 
 insert into catalog_Items
 values
-('BG011AAB', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Blue');
+('BG011AAB', 'High waisted jean', 'Tall Fit Waist', 12.99, 30, 'W', 'Blue');
 
 insert into catalog_Items
 values
-('BG011ABC', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Blue');
+('BG011ABC', 'High waisted jean', '80s style mens jean', 12.99, 30, 'M', 'Blue');
 
 insert into catalog_Items
 values
