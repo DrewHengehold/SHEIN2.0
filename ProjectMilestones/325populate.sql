@@ -214,94 +214,94 @@ values
  
 
 /*
-   Shyna catalog insert statements
+   Shyna catalog_Items insert statements
 */
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AAB', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Blue');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011ABC', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Blue');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011ACD', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011ADE', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AEF', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AFG', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AGH', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Brown');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AHI', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Brown');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AAB', 'Tops', 'Basic casual fit', 5.99, 25, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ABC', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'White');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ACD', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Red');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ADE', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Red');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AEF', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Black');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AFG', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Balck');
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AGH', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Blue');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AHI', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Blue');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011AAB', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'Black');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011AABC', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011ACD', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011AADE', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'White');
 
