@@ -10,56 +10,60 @@
 
 */
 
+start 325design.sql
+
+spool 325pop-out.txt
+
 /*
     new_user - Drew
 */
-insert into new_user
-values('forrest_reid', 'ForestIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('forrest_reid', 'ForestIsTheBest', 'ADMIN');
 
-insert into new_user
-values('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
-insert into new_user
-values('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
 
-insert into new_user
-values('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
 
-insert into new_user
-values('jacky_lyons', 'JackyIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('jacky_lyons', 'JackyIsTheBest', 'ADMIN');
 
-insert into new_user
-values('soran_vardanega', 'SoranIsTheBest', 'ADMIN');
+INSERT INTO new_user
+VALUES('soran_vardanega', 'SoranIsTheBest', 'ADMIN');
 
-insert into new_user
-values('john_doe', 'ZionNational', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('john_doe', 'ZionNational', 'CUSTOMER');
 
-insert into new_user
-values('jane_smith', 'ILoveCats', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('jane_smith', 'ILoveCats', 'CUSTOMER');
 
-insert into new_user
-values('bob_jones', 'ILoveDogs', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('bob_jones', 'ILoveDogs', 'CUSTOMER');
 
-insert into new_user
-values('michael_brown', 'BrownBerkely', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('michael_brown', 'BrownBerkely', 'CUSTOMER');
 
-insert into new_user
-values('william_black', 'BlackChicago', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('william_black', 'BlackChicago', 'CUSTOMER');
 
-insert into new_user
-values('lisa_jackson', 'JacksonNYC', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('lisa_jackson', 'JacksonNYC', 'CUSTOMER');
 
-insert into new_user
-values('ryan_taylor', 'Taylor13#', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('ryan_taylor', 'Taylor13#', 'CUSTOMER');
 
-insert into new_user
-values('susan_white', 'WhiteTheColor', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('susan_white', 'WhiteTheColor', 'CUSTOMER');
 
-insert into new_user
-values('emily_green', 'GreenTheApple', 'CUSTOMER');
+INSERT INTO new_user
+VALUES('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
-    forrest - Insert into customer profiles
+    forrest - INSERT INTO customer profiles
 
     Customer_Profil
     foreign key (user_name) refrences User
@@ -271,64 +275,50 @@ VALUES ('A00015', '7878787878787878');
     foreign key (ADDRESS_ID) refrences Address
 */
 
-insert into shipping
-values
-( 'A00001', 'N/A');
+INSERT INTO shipping
+VALUES( 'A00001', 'N/A');
 
-insert into shipping 
-values 
-('A00002', 'Leave at door'); 
+INSERT INTO shipping 
+VALUES ('A00002', 'Leave at door'); 
 
-insert into shipping 
-values 
-('A00003', 'Leave at gate'); 
+INSERT INTO shipping 
+VALUES ('A00003', 'Leave at gate'); 
 
-insert into shipping 
-values 
-('A00004', 'N/A');
+INSERT INTO shipping 
+VALUES ('A00004', 'N/A');
 
-insert into shipping 
-values 
-('A00005', 'Leave by mailbox'); 
+INSERT INTO shipping 
+VALUES ('A00005', 'Leave by mailbox'); 
 
-insert into shipping 
-values 
-('A00006', 'Leave at door');
+INSERT INTO shipping 
+VALUES ('A00006', 'Leave at door');
 
-insert into shipping 
-values 
-('A00007', 'Leave on stair'); 
+INSERT INTO shipping 
+VALUES ('A00007', 'Leave on stair'); 
 
-insert into shipping 
-values 
-('A00008', 'N/A');
+INSERT INTO shipping 
+VALUES ('A00008', 'N/A');
 
-insert into shipping 
-values 
-('A00009', 'N/A');
+INSERT INTO shipping 
+VALUES ('A00009', 'N/A');
 
-insert into shipping 
-values 
-('A00010', 'Leave by fence');    
+INSERT INTO shipping 
+VALUES ('A00010', 'Leave by fence');    
 
-insert into shipping 
-values 
-('A00011', 'Leave on stair');
+INSERT INTO shipping 
+VALUES ('A00011', 'Leave on stair');
 
-insert into shipping 
-values 
-('A00012', 'Leave at door');
+INSERT INTO shipping 
+VALUES ('A00012', 'Leave at door');
 
-insert into shipping 
-values 
-('A00013', 'N/A');
+INSERT INTO shipping 
+VALUES ('A00013', 'N/A');
 
-insert into shipping 
-values 
-('A00014', 'Leave on stair');   
-insert into shipping 
-values 
-('A00015', 'Leave by fence');
+INSERT INTO shipping 
+VALUES ('A00014', 'Leave on stair');   
+
+INSERT INTO shipping 
+VALUES ('A00015', 'Leave by fence');
  
 
  /*
@@ -394,50 +384,50 @@ shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
 shipment - jacky 
 */
 
-insert into shipment
-values ('sh0000','A00001','a12345', 'PICK', null);
+INSERT INTO shipment
+VALUES ('sh0000','A00001','a12345', 'PICK', null);
 
-insert into shipment
-values ('sh0001','A00002' ,'b12345', 'PICK', null);
+INSERT INTO shipment
+VALUES ('sh0001','A00002' ,'b12345', 'PICK', null);
 
-insert into shipment
-values ('sh0002','A00003','c12345', 'PICK', null);
+INSERT INTO shipment
+VALUES ('sh0002','A00003','c12345', 'PICK', null);
 
-insert into shipment
-values ('sh0003','A00004','d12345', 'PICK', null);
+INSERT INTO shipment
+VALUES ('sh0003','A00004','d12345', 'PICK', null);
 
-insert into shipment
-values ('sh0004','A00005','e12345', 'PACK', null);
+INSERT INTO shipment
+VALUES ('sh0004','A00005','e12345', 'PACK', null);
 
-insert into shipment
-values ('sh0005','A00006','f12345', 'PACK', null);
+INSERT INTO shipment
+VALUES ('sh0005','A00006','f12345', 'PACK', null);
 
-insert into shipment
-values ('sh0006','A00007','g12345', 'PACK', null);
+INSERT INTO shipment
+VALUES ('sh0006','A00007','g12345', 'PACK', null);
 
-insert into shipment
-values ('sh0007','A00008','h12345', 'PACK', null);
+INSERT INTO shipment
+VALUES ('sh0007','A00008','h12345', 'PACK', null);
 
-insert into shipment
-values ('sh0008','A00009','i12345', 'SHIP','02-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0008','A00009','i12345', 'SHIP','02-Dec-2023');
 
-insert into shipment
-values ('sh0009','A00010' ,'j12345', 'SHIP','03-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0009','A00010' ,'j12345', 'SHIP','03-Dec-2023');
 
-insert into shipment
-values ('sh0010','A00011' ,'k12345', 'SHIP','04-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0010','A00011' ,'k12345', 'SHIP','04-Dec-2023');
 
-insert into shipment
-values ('sh0011','A00012' ,'l12345', 'SHIP','05-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0011','A00012' ,'l12345', 'SHIP','05-Dec-2023');
 
-insert into shipment
-values ('sh0012','A00013','m12345', 'SHIP','06-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0012','A00013','m12345', 'SHIP','06-Dec-2023');
 
-insert into shipment
-values ('sh0013','A00014','n12345', 'SHIP','07-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0013','A00014','n12345', 'SHIP','07-Dec-2023');
 
-insert into shipment
-values ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
+INSERT INTO shipment
+VALUES ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
 
 /*
    Shyna catalog_Items insert statements
@@ -448,146 +438,99 @@ values ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
 
 --Bottoms
 
-insert into catalog_Items
-values
-('SKU001', 'Pants', 'Comfortable pants for women', 29.99, 20, 'W', 'Blue');
+INSERT INTO catalog_Items
+VALUES('SKU001', 'Pants', 'Comfortable pants for women', 29.99, 20, 'W', 'Blue');
 
-insert into catalog_Items
-values
-('SKU002', 'Leggings', 'Stylish leggings for women', 25.99, 20, 'W', 'Black');
+INSERT INTO catalog_Items
+VALUES('SKU002', 'Leggings', 'Stylish leggings for women', 25.99, 20, 'W', 'Black');
 
-insert into catalog_Items
-values
-('SKU003', 'Jeans', 'Casual jeans for women', 39.99, 30, 'W', 'White');
+INSERT INTO catalog_Items
+VALUES('SKU003', 'Jeans', 'Casual jeans for women', 39.99, 30, 'W', 'White');
 
-insert into catalog_Items
-values
-('SKU004', 'Shorts', 'Atheletic shorts for women', 22.99, 30, 'W', 'Gray');
+INSERT INTO catalog_Items
+VALUES('SKU004', 'Shorts', 'Atheletic shorts for women', 22.99, 30, 'W', 'Gray');
 
-insert into catalog_Items
-values
-('SKU005', 'High-waisted jeans', 'High-waisted jeans for women', 27.99, 30, 'W', 'Black');
+INSERT INTO catalog_Items
+VALUES('SKU005', 'High-waisted jeans', 'High-waisted jeans for women', 27.99, 30, 'W', 'Black');
 
-insert into catalog_Items
-values
-('SKU006', 'Sweatpants', 'Solid Slant pocket Sweatpants for women', 15.99, 30, 'W', 'Brown');
+INSERT INTO catalog_Items
+VALUES('SKU006', 'Sweatpants', 'Solid Slant pocket Sweatpants for women', 15.99, 30, 'W', 'Brown');
 
-insert into catalog_Items
-values
-('SKU007', 'Pants', 'Classic regular fit pants for men', 34.99, 30, 'M', 'Black');
+INSERT INTO catalog_Items
+VALUES('SKU007', 'Pants', 'Classic regular fit pants for men', 34.99, 30, 'M', 'Black');
 
-insert into catalog_Items
-values
-('SKU008', 'Shorts', 'Cargo shorts for men', 24.99, 30, 'M', 'Khaki');
+INSERT INTO catalog_Items
+VALUES('SKU008', 'Shorts', 'Cargo shorts for men', 24.99, 30, 'M', 'Khaki');
 
-insert into catalog_Items
-values
-('SKU009', 'Joggers', 'Casual joggers for men', 29.99, 30, 'M', 'Navy');
+INSERT INTO catalog_Items
+VALUES('SKU009', 'Joggers', 'Casual joggers for men', 29.99, 30, 'M', 'Navy');
 
-insert into catalog_Items
-values
-('SKU010', 'Cargo pants', 'Flap pocket side drawstring waist for men', 37.99, 30, 'M', 'Gray');
+INSERT INTO catalog_Items
+VALUES('SKU010', 'Cargo pants', 'Flap pocket side drawstring waist for men', 37.99, 30, 'M', 'Gray');
 
-insert into catalog_Items
-values
-('SKU011', 'Sweatpants', 'Basic slant pocket drawstring sweatpants for men', 16.99, 30, 'M', 'Red');
+INSERT INTO catalog_Items
+VALUES('SKU011', 'Sweatpants', 'Basic slant pocket drawstring sweatpants for men', 16.99, 30, 'M', 'Red');
 
-
-insert into catalog_Items
-values
-('SKU012', 'Straight leg jeans', 'Cotton ripped straight leg jeans for men', 32.99, 30, 'M', 'Light blue');
+INSERT INTO catalog_Items
+VALUES('SKU012', 'Straight leg jeans', 'Cotton ripped straight leg jeans for men', 32.99, 30, 'M', 'Light blue');
 
 --Tops
 
-insert into catalog_Items
-values
-('SKU013', 'Women T-shirt', 'Causual cotton t-shirt for women', 7.99, 25, 'W', 'Pink');
+INSERT INTO catalog_Items
+VALUES('SKU013', 'Women T-shirt', 'Causual cotton t-shirt for women', 7.99, 25, 'W', 'Pink');
 
-insert into catalog_Items
-values
-('SKU014', 'Sweater', 'Women knitted winter sweater', 25.99, 20, 'W', 'Floral');
+INSERT INTO catalog_Items
+VALUES('SKU014', 'Sweater', 'Women knitted winter sweater', 25.99, 20, 'W', 'Floral');
 
+INSERT INTO catalog_Items
+VALUES('SKU015', 'Blouse', 'Formal white blouse for women', 22.99, 20, 'W', 'White');
 
-insert into catalog_Items
-values
-('SKU015', 'Blouse', 'Formal white blouse for women', 22.99, 20, 'W', 'White');
+INSERT INTO catalog_Items
+VALUES('SKU016', 'Tank-Tops', 'Solid Tank Tops for women', 5.99, 25, 'W', 'Orange');
 
+INSERT INTO catalog_Items
+VALUES('SKU017', 'High-Neck Sweater', 'Women turtleneck drop shoulder waffle knit sweater', 32.99, 25, 'W', 'Yellow');
 
-insert into catalog_Items
-values
-('SKU016', 'Tank-Tops', 'Solid Tank Tops for women', 5.99, 25, 'W', 'Orange');
+INSERT INTO catalog_Items
+VALUES('SKU018', 'Men T-shirts', 'Basic casual cotton t-shirt for men', 5.99, 25, 'M', 'Red');
 
+INSERT INTO catalog_Items
+VALUES('SKU019', 'Men shirt', 'Plaid print flap pocket shirt for men', 19.99, 25, 'M', 'Multicolor');
 
-insert into catalog_Items
-values
-('SKU017', 'High-Neck Sweater', 'Women turtleneck drop shoulder waffle knit sweater', 32.99, 25, 'W', 'Yellow');
+INSERT INTO catalog_Items
+VALUES('SKU020', 'Hoodie', 'Sporty hoodie for men', 22.99, 35, 'M', 'Apricot');
 
+INSERT INTO catalog_Items
+VALUES('SKU021', 'Sweatshirt', 'Coloblock letter patched detail sweatshirt for men', 25.99, 35, 'M', 'Blue');
 
-insert into catalog_Items
-values
-('SKU018', 'Men T-shirts', 'Basic casual cotton t-shirt for men', 5.99, 25, 'M', 'Red');
-
-insert into catalog_Items
-values
-('SKU019', 'Men shirt', 'Plaid print flap pocket shirt for men', 19.99, 25, 'M', 'Multicolor');
-
-
-insert into catalog_Items
-values
-('SKU020', 'Hoodie', 'Sporty hoodie for men', 22.99, 35, 'M', 'Apricot');
-
-
-insert into catalog_Items
-values
-('SKU021', 'Sweatshirt', 'Coloblock letter patched detail sweatshirt for men', 25.99, 35, 'M', 'Blue');
-
-
-insert into catalog_Items
-values
-('SKU022', 'Men zip-up sweatshirt', 'Solid zip up funnel neck sweatshirt', 27.99, 20, 'M', 'Dark grey');
+INSERT INTO catalog_Items
+VALUES('SKU022', 'Men zip-up sweatshirt', 'Solid zip up funnel neck sweatshirt', 27.99, 20, 'M', 'Dark grey');
 
 --Shoes
 
-insert into catalog_Items
-values
-('SKU023', 'Sandals', 'Summer elastic slingback wedge sandals', 25.99, 20, 'W', 'White');
+INSERT INTO catalog_Items
+VALUES('SKU023', 'Sandals', 'Summer elastic slingback wedge sandals', 25.99, 20, 'W', 'White');
 
+INSERT INTO catalog_Items
+VALUES('SKU024', 'Women sneakers', 'Casual lace-up womens sneakers', 39.99, 20, 'W', 'Red');
 
-insert into catalog_Items
-values
-('SKU024', 'Women sneakers', 'Casual lace-up womens sneakers', 39.99, 20, 'W', 'Red');
+INSERT INTO catalog_Items
+VALUES('SKU025', 'Sports shoes', 'Women running shoes with synthetic leather', 33.99, 20, 'W', 'Multicolor');
 
+INSERT INTO catalog_Items
+VALUES('SKU026', 'Women wedge sneakers', 'Womens platform sneakers with wedge heels', 25.99, 20, 'W', 'Beige');
 
-insert into catalog_Items
-values
-('SKU025', 'Sports shoes', 'Women running shoes with synthetic leather', 33.99, 20, 'W', 'Multicolor');
+INSERT INTO catalog_Items
+VALUES('SKU027', 'Men sneakers', 'Men fashionable lightweight colorblock sneakers', 39.99, 20, 'M', 'Green');
 
+INSERT INTO catalog_Items
+VALUES('SKU028', 'Boots', 'Men high top work boots with steel toe cap', 45.99, 20, 'M', 'Black');
 
-insert into catalog_Items
-values
-('SKU026', 'Women wedge sneakers', 'Womens platform sneakers with wedge heels', 25.99, 20, 'W', 'Beige');
+INSERT INTO catalog_Items
+VALUES('SKU029', 'Loafers', 'Mens fashionable and comfortable loafers', 25.99, 20, 'M', 'Bronze');
 
-
-insert into catalog_Items
-values
-('SKU027', 'Men sneakers', 'Men fashionable lightweight colorblock sneakers', 39.99, 20, 'M', 'Green');
-
-
-insert into catalog_Items
-values
-('SKU028', 'Boots', 'Men high top work boots with steel toe cap', 45.99, 20, 'M', 'Black');
-
-
-insert into catalog_Items
-values
-('SKU029', 'Loafers', 'Mens fashionable and comfortable loafers', 25.99, 20, 'M', 'Bronze');
-
-
-insert into catalog_Items
-values
-('SKU030', 'Dress shoes', 'Mens business wingtip shoes', 32.99, 20, 'M', 'Brown');
-
-
+INSERT INTO catalog_Items
+VALUES('SKU030', 'Dress shoes', 'Mens business wingtip shoes', 32.99, 20, 'M', 'Brown');
 
 /*
 bottoms
@@ -596,59 +539,41 @@ Bottoms(SKU, waist_size, material)
     foreign key (SKU) refrences Catalog_Items
 */
 
+INSERT INTO bottoms
+VALUES('SKU001', 26,'Cotton' );
 
-insert into bottoms
-values
-('SKU001', 26,'Cotton' );
+INSERT INTO bottoms
+VALUES('SKU002', 27,'Spandex' );
 
-insert into bottoms
-values
-('SKU002', 27,'Spandex' );
+INSERT INTO bottoms
+VALUES('SKU003', 30,'Denim');
 
-insert into bottoms
-values
-('SKU003', 30,'Denim');
+INSERT INTO bottoms
+VALUES('SKU004', 31,'Polyster');
 
+INSERT INTO bottoms
+VALUES('SKU005', 30,'Cotton');
 
-insert into bottoms
-values
-('SKU004', 31,'Polyster');
+INSERT INTO bottoms
+VALUES('SKU006', 31,'Polyster');
 
-insert into bottoms
-values
-('SKU005', 30,'Cotton');
+INSERT INTO bottoms
+VALUES('SKU007', 28,'Polyster');
 
+INSERT INTO bottoms
+VALUES('SKU008', 27,'Spandex');
 
-insert into bottoms
-values
-('SKU006', 31,'Polyster');
+INSERT INTO bottoms
+VALUES('SKU009', 26,'Spandex');
 
+INSERT INTO bottoms
+VALUES('SKU010', 29,'Polyster');
 
-insert into bottoms
-values
-('SKU007', 28,'Polyster');
+INSERT INTO bottoms
+VALUES('SKU011', 30,'Cotton');
 
-insert into bottoms
-values
-('SKU008', 27,'Spandex');
-
-insert into bottoms
-values
-('SKU009', 26,'Spandex');
-
-insert into bottoms
-values
-('SKU010', 29,'Polyster');
-
-insert into bottoms
-values
-('SKU011', 30,'Cotton');
-
-
-insert into bottoms
-values
-('SKU012', 31,'Cotton');
-
+INSERT INTO bottoms
+VALUES('SKU012', 31,'Cotton');
 
 /*
 tops
@@ -657,51 +582,35 @@ Tops(SKU, top_size, sleeve_length, neck_line_type)
     foreign key (SKU) refrences Catalog_Items
 */
 
+INSERT INTO tops
+VALUES('SKU013', 'S','Short', 'Round');
 
-insert into tops
-values
-('SKU013', 'S','Short', 'Round');
+INSERT INTO tops
+VALUES('SKU014', 'M','Long', 'Round-Neck' );
 
+INSERT INTO tops
+VALUES('SKU015', 'L','Long', 'V-Neck' );
 
-insert into tops
-values
-('SKU014', 'M','Long', 'Round-Neck' );
+INSERT INTO tops
+VALUES('SKU016', 'S','Short', 'High-Neck' );
 
-insert into tops
-values
-('SKU015', 'L','Long', 'V-Neck' );
+INSERT INTO tops
+VALUES('SKU017', 'M','Long', 'High-Neck' );
 
-insert into tops
-values
-('SKU016', 'S','Short', 'High-Neck' );
+INSERT INTO tops
+VALUES('SKU018', 'L','Short', 'Round-Neck' );
 
-insert into tops
-values
-('SKU017', 'M','Long', 'High-Neck' );
+INSERT INTO tops
+VALUES('SKU019', 'M','Long', 'Collar' );
 
+INSERT INTO tops
+VALUES('SKU020', 'M','Long', 'Hooded' );
 
-insert into tops
-values
-('SKU018', 'L','Short', 'Round-Neck' );
+INSERT INTO tops
+VALUES('SKU021', 'S','Long', 'Crew-Neck' );
 
-insert into tops
-values
-('SKU019', 'M','Long', 'Collar' );
-
-insert into tops
-values
-('SKU020', 'M','Long', 'Hooded' );
-
-insert into tops
-values
-('SKU021', 'S','Long', 'Crew-Neck' );
-
-insert into tops
-values
-('SKU022', 'L','Long', 'Round' );
-
-
-
+INSERT INTO tops
+VALUES('SKU022', 'L','Long', 'Round' );
 
 /*
 shoes
@@ -710,38 +619,29 @@ Shoes(SKU, shoe_size, shoe_type)
     foreign key (SKU) refrences Catalog_Items
 */
 
+INSERT INTO shoes
+VALUES('SKU023', 7,'Sandals');
 
-insert into shoes
-values
-('SKU023', 7,'Sandals');
+INSERT INTO shoes
+VALUES('SKU024', 8,'Sneaker');
 
-insert into shoes
-values
-('SKU024', 8,'Sneaker');
+INSERT INTO shoes
+VALUES('SKU025', 11,'Sports');
 
-insert into shoes
-values
-('SKU025', 11,'Sports');
+INSERT INTO shoes
+VALUES('SKU026', 9,'Wedge sneaker');
 
-insert into shoes
-values
-('SKU026', 9,'Wedge sneaker');
+INSERT INTO shoes
+VALUES('SKU027', 8,'Sneaker');
 
-insert into shoes
-values
-('SKU027', 8,'Sneaker');
+INSERT INTO shoes
+VALUES('SKU028', 10,'Boots');
 
-insert into shoes
-values
-('SKU028', 10,'Boots');
+INSERT INTO shoes
+VALUES('SKU029', 9,'Loafers');
 
-insert into shoes
-values
-('SKU029', 9,'Loafers');
-
-insert into shoes
-values
-('SKU030', 8,'Dress shoes');
+INSERT INTO shoes
+VALUES('SKU030', 8,'Dress shoes');
 
 /*
 Line_items
@@ -752,46 +652,48 @@ line_items
 */
 
 INSERT INTO line_items
-VALUES('a12345', 'SKU001',2, 12);
+VALUES('a12345', 'SKU001', 2, 12);
 
 INSERT INTO line_items
-VALUES('b12345', 'SKU002',6, 300);
+VALUES('b12345', 'SKU002', 6, 300);
 
 INSERT INTO line_items
-VALUES('c12345', 'SKU003',4, 200);
+VALUES('c12345', 'SKU003', 4, 200);
 
 INSERT INTO line_items
-VALUES('d12345', 'SKU004',7, 400 );
+VALUES('d12345', 'SKU004', 7, 400 );
 
 INSERT INTO line_items
-VALUES('e12345', 'SKU005',2, 90);
+VALUES('e12345', 'SKU005', 2, 90);
 
 INSERT INTO line_items
-VALUES('f12345', 'SKU006',1, 12);
+VALUES('f12345', 'SKU006', 1, 12);
 
 INSERT INTO line_items
-VALUES('g12345', 'SKU007',5, 100);
+VALUES('g12345', 'SKU007', 5, 100);
 
 INSERT INTO line_items
-VALUES('h12345', 'SKU008',9, 500);
+VALUES('h12345', 'SKU008', 9, 500);
 
 INSERT INTO line_items
-VALUES('i12345', 'SKU009',3, 130);
+VALUES('i12345', 'SKU009', 3, 130);
 
 INSERT INTO line_items
-VALUES('j12345', 'SKU010',8, 600);
+VALUES('j12345', 'SKU010', 8, 600);
 
 INSERT INTO line_items
-VALUES('k12345', 'SKU011',2, 124);
+VALUES('k12345', 'SKU011', 2, 124);
 
 INSERT INTO line_items
-VALUES('l12345', 'SKU012',7, 356);
+VALUES('l12345', 'SKU012', 7, 356);
 
 INSERT INTO line_items
-VALUES('m12345', 'SKU013',9, 127);
+VALUES('m12345', 'SKU013', 9, 127);
 
 INSERT INTO line_items
-VALUES('n12345', 'SKU014',4, 110);
+VALUES('n12345', 'SKU014', 4, 110);
 
 INSERT INTO line_items
-VALUES('o12345', 'SKU015',9, 700);
+VALUES('o12345', 'SKU015', 9, 700);
+
+spool off
