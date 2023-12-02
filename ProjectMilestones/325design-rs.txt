@@ -4,49 +4,49 @@ LAST MODIFIED DATE: 17-Nov-2023
 
 SCHEMA/DESIGN:
 
-User(USER_NAME, password, user_type)
+new_user(USER_NAME, password, user_type)
 
-Customer_Profile(CUSTOMER_ID, user_name, fname, lname, phone, email)
+customer_Profile(CUSTOMER_ID, user_name, fname, lname, phone, email)
     foreign key (user_name) refrences User
 
 
-Payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
+payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
 
-Address(ADDRESS_ID, customer_id, street, city, state, zip)
+addy(ADDRESS_ID, customer_id, street, city, state, zip)
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
 
-Shipping(ADDRESS_ID, ship_instructions)
+shipping(ADDRESS_ID, ship_instructions)
     foreign key (ADDRESS_ID) refrences Address
 
-Billing(ADDRESS_ID, CARD_NUM)
+billing(ADDRESS_ID, CARD_NUM)
     foreign key (ADDRESS_ID) refrences Address
     foreign key (CARD_NUM) refrences Payment_info
 
 
-Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
+order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
     foreign key (customer_id) refrences Customer_Profile
 
 
-Line_items(ORDER_ID, SKU, quantity, price)
+line_items(ORDER_ID, SKU, quantity, price)
     foreign key (ORDER_ID) refrences Order
     foreign key (SKU) refrences Catalog_Items
 
 
-Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
+shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     foreign key (address_id) refrences shipping
     foreign key (order_id) refrences Order
 
-Catalog_Items(SKU, item_name, item_description, listed_price,
+catalog_Items(SKU, item_name, item_description, listed_price,
               avail_quatity, gender, item_color)
 
-Bottoms(SKU, waist_size, material)
+bottoms(SKU, waist_size, material)
     foreign key (SKU) refrences Catalog_Items
 
-Tops(SKU, top_size, sleeve_length, neck_line_type)
+tops(SKU, top_size, sleeve_length, neck_line_type)
     foreign key (SKU) refrences Catalog_Items
 
-Shoes(SKU, shoe_size, shoe_type)
+shoes(SKU, shoe_size, shoe_type)
     foreign key (SKU) refrences Catalog_Items

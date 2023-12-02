@@ -10,102 +10,112 @@
 
 */
 
-insert into user
+
+/*
+    new_user - Drew
+*/
+insert into new_user
 values('forrest_reid', 'ForestIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('jacky_lyons', 'JackyIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('soran_vardanega', 'SoranIsTheBest', 'ADMIN');
 
-insert into user
+insert into new_user
 values('john_doe', 'ZionNational', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('jane_smith', 'ILoveCats', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('bob_jones', 'ILoveDogs', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('micheal_brown', 'BrownBerkely', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('william_black', 'BlackChicago', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('lisa_jackson', 'JacksonNYC', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('ryan_taylor', 'Taylor13#', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('susan_white', 'WhiteTheColor', 'CUSTOMER');
 
-insert into user
+insert into new_user
 values('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
     forrest - Insert into customer profiles
+
+    Customer_Profile(CUSTOMER_ID, user_name, fname, lname, phone, email)
+    foreign key (user_name) refrences User
 */
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00001', 'john_doe', 'John', 'Doe', '1234567890', 'john.doe@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00002', 'jane_smith', 'Jane', 'Smith', '9876543210', 'jane.smith@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00003', 'bob_jones', 'Bob', 'Jones', '5556667777', 'bob.jones@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00004', 'susan_white', 'Susan', 'White', '1112223333', 'susan.white@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00005', 'michael_brown', 'Michael', 'Brown', '9998887777', 'michael.brown@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00006', 'emily_green', 'Emily', 'Green', '4445556666', 'emily.green@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00007', 'william_black', 'William', 'Black', '7778889999', 'william.black@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00008', 'lisa_jackson', 'Lisa', 'Jackson', '3332221111', 'lisa.jackson@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00009', 'ryan_taylor', 'Ryan', 'Taylor', '5554443333', 'ryan.taylor@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00010', 'soran_vardanega', 'Soran', 'Vardanega', '6667778888', 'soran.vardanega@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00011', 'shyna_kumar', 'Shyna', 'Kumar', '9990001111', 'shyna.kumar@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00012', 'jacky_lyons', 'Jacky', 'Lyons', '1110002222', 'jacky.lyons@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00013', 'drew_hengehold', 'Drew', 'Hengehold', '8887776666', 'drew.hengehold@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00014', 'cosette_basto', 'Cosette', 'Basto', '2223334444', 'cosette.basto@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, user_name, fname, lname, phone, email)
+INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
 VALUES ('C00015', 'forrest_reid', 'Forrest', 'Reid', '4443332222', 'forrest.reid@email.com');
 
 
 /*
  Jacky creation - Payment info Insert statements 
+
+ payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
+    foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 */
 INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
 VALUES ('1234567890123456', 'CUST01', 'John Doe', '12/25', 'john@example.com');
@@ -150,8 +160,30 @@ INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing
 VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
 
 /*
- Cosette - Shipping info Insert statements 
+ addy
+
+addy(ADDRESS_ID, customer_id, street, city, state, zip)
+    foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
+
 */
+
+
+/*
+Billing
+
+ billing(ADDRESS_ID, CARD_NUM)
+    foreign key (ADDRESS_ID) refrences Address
+    foreign key (CARD_NUM) refrences Payment_info
+*/
+
+
+/*
+ Cosette - Shipping info Insert statements 
+
+ shipping(ADDRESS_ID, ship_instructions)
+    foreign key (ADDRESS_ID) refrences Address
+*/
+
 insert into shipping
 values
 ( '111111', 'N/A');
@@ -213,96 +245,190 @@ values
 ('171717', 'Leave by fence');
  
 
-/*
-   Shyna catalog insert statements
+ /*
+Order - Drew
+
+Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
+    foreign key (customer_id) refrences Customer_Profile
 */
 
-insert into catalog
-values
-('BG011AAB', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Blue');
+/*
+Line_items
 
-insert into catalog
-values
-('BG011ABC', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Blue');
+line_items(ORDER_ID, SKU, quantity, price)
+    foreign key (ORDER_ID) refrences Order
+    foreign key (SKU) refrences Catalog_Items
+*/
 
-insert into catalog
+/*
+Shipment - Drew
+
+shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
+    foreign key (address_id) refrences shipping
+    foreign key (order_id) refrences Order
+*/
+
+insert into shipment
+values ('sh0000', , , 'PICK', null)
+
+insert into shipment
+values ('sh0001', , , 'PICK', null)
+
+insert into shipment
+values ('sh0002', , , 'PICK', null)
+
+insert into shipment
+values ('sh0003', , , 'PICK', null)
+
+insert into shipment
+values ('sh0004', , , 'PACK', null)
+
+insert into shipment
+values ('sh0005', , , 'PACK', null)
+
+insert into shipment
+values ('sh0006', , , 'PACK', null)
+
+insert into shipment
+values ('sh0007', , , 'PACK', null)
+
+insert into shipment
+values ('sh0008', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0009', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0010', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0011', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0012', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0013', , , 'SHIP', null)
+
+insert into shipment
+values ('sh0014', , , 'SHIP', null)
+
+
+/*
+   Shyna catalog_Items insert statements
+
+   catalog_Items(SKU, item_name, item_description, listed_price,
+              avail_quatity, gender, item_color)
+*/
+
+insert into catalog_Items
+values
+('BG011AAB', 'High waisted jean', 'Tall Fit Waist', 12.99, 30, 'W', 'Blue');
+
+insert into catalog_Items
+values
+('BG011ABC', 'High waisted jean', '80s style mens jean', 12.99, 30, 'M', 'Blue');
+
+insert into catalog_Items
 values
 ('BG011ACD', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011ADE', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AEF', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AFG', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AGH', 'Bottom', 'High waisted jean', 12.99, 30, 'W', 'Brown');
 
-insert into catalog
+insert into catalog_Items
 values
 ('BG011AHI', 'Bottom', 'High waisted jean', 12.99, 30, 'M', 'Brown');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AAB', 'Tops', 'Basic casual fit', 5.99, 25, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ABC', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'White');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ACD', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Red');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011ADE', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Red');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AEF', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Black');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AFG', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Balck');
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AGH', 'Tops', 'Basic Casual fit', 5.99, 25, 'W', 'Blue');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('TG011AHI', 'Tops', 'Basic Casual fit', 5.99, 25, 'M', 'Blue');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011AAB', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'Black');
 
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011AABC', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'Black');
 
-insert into catalog
+insert into catalog_Items
 values
 ('SG011ACD', 'Shoes', 'Women casual shoes', 19.99, 15, 'W', 'White');
 
-insert into catalog
+insert into catalog_Items
 values
-('SG011AADE', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'White');
+('SG011ADE', 'Shoes', 'Women casual shoes', 19.99, 15, 'M', 'White');
 
 
+/*
+bottoms
+
+bottoms(SKU, waist_size, material)
+    foreign key (SKU) refrences Catalog_Items
+*/
+
+
+/*
+tops
+
+tops(SKU, top_size, sleeve_length, neck_line_type)
+    foreign key (SKU) refrences Catalog_Items
+*/
+
+
+/*
+shoes
+
+shoes(SKU, shoe_size, shoe_type)
+    foreign key (SKU) refrences Catalog_Items
+*/
