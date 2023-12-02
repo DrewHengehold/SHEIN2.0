@@ -10,6 +10,9 @@
 
 */
 
+start 325design.sql
+
+spool 325pop-out.txt;
 
 /*
     new_user - Drew
@@ -1141,7 +1144,7 @@ values
 (12, 'SKU030');
 
 
-
+spool off
 
 
 /*
