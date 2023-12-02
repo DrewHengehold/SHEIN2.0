@@ -393,51 +393,55 @@ shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     foreign key (address_id) refrences shipping
     foreign key (order_id) refrences Order
 */
+/*
+shipment - jacky 
+*/
 
 insert into shipment
-values ('sh0000', , , 'PICK', null)
+values ('sh0000','111111','a123456', 'PICK', null)
 
 insert into shipment
-values ('sh0001', , , 'PICK', null)
+values ('sh0001','222222' ,'b123456', 'PICK', null)
 
 insert into shipment
-values ('sh0002', , , 'PICK', null)
+values ('sh0002','333333','c123456', 'PICK', null)
 
 insert into shipment
-values ('sh0003', , , 'PICK', null)
+values ('sh0003','444444','d123456', 'PICK', null)
 
 insert into shipment
-values ('sh0004', , , 'PACK', null)
+values ('sh0004','555555','e123456', 'PACK', null)
 
 insert into shipment
-values ('sh0005', , , 'PACK', null)
+values ('sh0005','666666' ,'f123456', 'PACK', null)
 
 insert into shipment
-values ('sh0006', , , 'PACK', null)
+values ('sh0006','777777','g123456', 'PACK', null)
 
 insert into shipment
-values ('sh0007', , , 'PACK', null)
+values ('sh0007','888888','h123456', 'PACK', null)
 
 insert into shipment
-values ('sh0008', , , 'SHIP', null)
+values ('sh0008','999999','i123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0009', , , 'SHIP', null)
+values ('sh0009','121212' ,'j123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0010', , , 'SHIP', null)
+values ('sh0010','131313' ,'k123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0011', , , 'SHIP', null)
+values ('sh0011','141414' ,'l123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0012', , , 'SHIP', null)
+values ('sh0012','151515','m123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0013', , , 'SHIP', null)
+values ('sh0013','161616','n123456', 'SHIP', null)
 
 insert into shipment
-values ('sh0014', , , 'SHIP', null)
+values ('sh0014','171717' ,'o123456', 'SHIP', null)
+
 
 
 /*
