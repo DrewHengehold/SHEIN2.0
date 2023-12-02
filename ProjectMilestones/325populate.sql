@@ -1105,3 +1105,4 @@ line_items(ORDER_ID, SKU, quantity, price)
     foreign key (ORDER_ID) refrences Order
     foreign key (SKU) refrences Catalog_Items
 */
+  
