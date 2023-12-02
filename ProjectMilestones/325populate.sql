@@ -418,6 +418,9 @@ bottoms(SKU, waist_size, material)
 */
 
 
+
+
+
 /*
 tops
 
@@ -432,3 +435,4 @@ shoes
 shoes(SKU, shoe_size, shoe_type)
     foreign key (SKU) refrences Catalog_Items
 */
+
