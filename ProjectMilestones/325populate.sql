@@ -10,7 +10,6 @@
 
 */
 
-
 /*
     new_user - Drew
 */
@@ -42,7 +41,7 @@ insert into new_user
 values('bob_jones', 'ILoveDogs', 'CUSTOMER');
 
 insert into new_user
-values('micheal_brown', 'BrownBerkely', 'CUSTOMER');
+values('michael_brown', 'BrownBerkely', 'CUSTOMER');
 
 insert into new_user
 values('william_black', 'BlackChicago', 'CUSTOMER');
@@ -62,102 +61,101 @@ values('emily_green', 'GreenTheApple', 'CUSTOMER');
 /* 
     forrest - Insert into customer profiles
 
-    Customer_Profile(CUSTOMER_ID, user_name, fname, lname, phone, email)
+    Customer_Profil
     foreign key (user_name) refrences User
 */
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00001', 'john_doe', 'John', 'Doe', '1234567890', 'john.doe@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00002', 'jane_smith', 'Jane', 'Smith', '9876543210', 'jane.smith@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00003', 'bob_jones', 'Bob', 'Jones', '5556667777', 'bob.jones@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00004', 'susan_white', 'Susan', 'White', '1112223333', 'susan.white@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00005', 'michael_brown', 'Michael', 'Brown', '9998887777', 'michael.brown@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00006', 'emily_green', 'Emily', 'Green', '4445556666', 'emily.green@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00007', 'william_black', 'William', 'Black', '7778889999', 'william.black@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00008', 'lisa_jackson', 'Lisa', 'Jackson', '3332221111', 'lisa.jackson@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00009', 'ryan_taylor', 'Ryan', 'Taylor', '5554443333', 'ryan.taylor@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00010', 'soran_vardanega', 'Soran', 'Vardanega', '6667778888', 'soran.vardanega@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00011', 'shyna_kumar', 'Shyna', 'Kumar', '9990001111', 'shyna.kumar@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00012', 'jacky_lyons', 'Jacky', 'Lyons', '1110002222', 'jacky.lyons@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00013', 'drew_hengehold', 'Drew', 'Hengehold', '8887776666', 'drew.hengehold@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00014', 'cosette_basto', 'Cosette', 'Basto', '2223334444', 'cosette.basto@email.com');
 
-INSERT INTO customer_profile (CUSTOMER_ID, new_user_name, fname, lname, phone, email)
+INSERT INTO customer_profile
 VALUES ('C00015', 'forrest_reid', 'Forrest', 'Reid', '4443332222', 'forrest.reid@email.com');
-
 
 /*
  Jacky creation - Payment info Insert statements 
 
- payment_info(CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
+ payment_info
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 */
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('1234567890123456', 'CUST01', 'John Doe', '12/25', 'john@example.com');
+INSERT INTO payment_info 
+VALUES ('1234567890123456', 'C00001', 'John Doe', '12/25', 'john@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('9876543210987654', 'CUST02', 'Jane Smith', '09/24', 'jane@example.com');
+INSERT INTO payment_info 
+VALUES ('9876543210987654', 'C00002', 'Jane Smith', '09/24', 'jane@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('5678901234567890', 'CUST03', 'Alice Johnson', '03/23', 'alice@example.com');
+INSERT INTO payment_info 
+VALUES ('5678901234567890', 'C00003', 'Alice Johnson', '03/23', 'alice@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('1122334455667788', 'CUST04', 'Michael Brown', '07/23', 'michael@example.com');
+INSERT INTO payment_info 
+VALUES ('1122334455667788', 'C00004', 'Michael Brown', '07/23', 'michael@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('9988776655443322', 'CUST05', 'Sarah Johnson', '10/25', 'sarah@example.com');
+INSERT INTO payment_info 
+VALUES ('9988776655443322', 'C00005', 'Sarah Johnson', '10/25', 'sarah@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('1212121212121212', 'CUST06', 'Emily Davis', '05/24', 'emily@example.com');
+INSERT INTO payment_info 
+VALUES ('1212121212121212', 'C00006', 'Emily Davis', '05/24', 'emily@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('4545454545454545', 'CUST07', 'David Wilson', '11/23', 'david@example.com');
+INSERT INTO payment_info 
+VALUES ('4545454545454545', 'C00007', 'David Wilson', '11/23', 'david@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('7878787878787878', 'CUST08', 'Sophia Garcia', '08/24', 'sophia@example.com');
+INSERT INTO payment_info 
+VALUES ('7878787878787878', 'C00008', 'Sophia Garcia', '08/24', 'sophia@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('3232323232323232', 'CUST09', 'Matthew Martinez', '02/23', 'matthew@example.com');
+INSERT INTO payment_info 
+VALUES ('3232323232323232', 'C00009', 'Matthew Martinez', '02/23', 'matthew@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('6666666666666666', 'CUST10', 'Olivia Lopez', '06/25', 'olivia@example.com');
+INSERT INTO payment_info 
+VALUES ('6666666666666666', 'C00010', 'Olivia Lopez', '06/25', 'olivia@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('9999999999999999', 'CUST11', 'Ethan Adams', '09/23', 'ethan@example.com');
+INSERT INTO payment_info 
+VALUES ('9999999999999999', 'C00011', 'Ethan Adams', '09/23', 'ethan@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('8888888888888888', 'CUST12', 'Ava Hernandez', '12/24', 'ava@example.com');
+INSERT INTO payment_info 
+VALUES ('8888888888888888', 'C00012', 'Ava Hernandez', '12/24', 'ava@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('1010101010101010', 'CUST13', 'Noah Taylor', '04/23', 'noah@example.com');
+INSERT INTO payment_info 
+VALUES ('1010101010101010', 'C00013', 'Noah Taylor', '04/23', 'noah@example.com');
 
-INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing_email)
-VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
+INSERT INTO payment_info 
+VALUES ('7777777777777777', 'C00014', 'Isabella Nguyen', '01/25', 'isabella@example.com');
 
 /*
  Forrest - addy
@@ -166,104 +164,104 @@ addy(ADDRESS_ID, customer_id, street, city, state, zip)
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
 */
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00001', 'C00001', '123 Main St', 'Anytown', 'CA', '12345');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00002', 'C00002', '456 Oak Ave', 'Somewhereville', 'NY', '54321');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00003', 'C00003', '789 Elm Blvd', 'Nowhere City', 'TX', '67890');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00004', 'C00004', '101 Pine Ln', 'Smalltown', 'FL', '13579');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00005', 'C00005', '202 Maple Dr', 'Big City', 'IL', '24680');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00006', 'C00006', '303 Birch St', 'Anywhere', 'AZ', '98765');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00007', 'C00007', '404 Cedar Ave', 'Everytown', 'WA', '11223');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00008', 'C00008', '505 Redwood Rd', 'Middleofnowhere', 'GA', '33445');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00009', 'C00009', '606 Spruce Blvd', 'Hometown', 'MI', '55667');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00010', 'C00010', '707 Cedar Ln', 'Downtown', 'OR', '77889');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00011', 'C00011', '808 Pine Dr', 'Uptown', 'NC', '99001');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00012', 'C00012', '909 Elm St', 'Suburbia', 'SC', '11234');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00013', 'C00013', '121 Oak Blvd', 'Countryside', 'PA', '22345');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00014', 'C00014', '232 Pine Dr', 'Metropolis', 'NJ', '33456');
 
-INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+INSERT INTO addy 
 VALUES ('A00015', 'C00015', '343 Maple Ln', 'Village', 'UT', '44567');
 
 /*
 Billing
 
- billing(ADDRESS_ID, CARD_NUM)
+ billin
     foreign key (ADDRESS_ID) refrences Address
     foreign key (CARD_NUM) refrences Payment_info
 */
 
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00001', '1234567890123456');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00002', '9876543210987654');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00003', '5678901234567890');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00004', '1122334455667788');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00005', '9988776655443322');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00006', '1212121212121212');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00007', '4545454545454545');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00008', '7878787878787878');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00009', '3232323232323232');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00010', '6666666666666666');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00011', '9999999999999999');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00012', '8888888888888888');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00013', '1010101010101010');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
+INSERT INTO billing 
 VALUES ('A00014', '7777777777777777');
 
-INSERT INTO billing (ADDRESS_ID, CARD_NUM) 
-VALUES ('A00015', '5555555555555555');
+INSERT INTO billing 
+VALUES ('A00015', '7878787878787878');
 
 
 /*
@@ -275,63 +273,62 @@ VALUES ('A00015', '5555555555555555');
 
 insert into shipping
 values
-( '111111', 'N/A');
+( 'A00001', 'N/A');
 
 insert into shipping 
 values 
-('222222', 'Leave at door'); 
+('A00002', 'Leave at door'); 
 
 insert into shipping 
 values 
-('333333', 'Leave at gate'); 
+('A00003', 'Leave at gate'); 
 
 insert into shipping 
 values 
-('444444', 'N/A');
+('A00004', 'N/A');
 
 insert into shipping 
 values 
-('555555', 'Leave by mailbox'); 
+('A00005', 'Leave by mailbox'); 
 
 insert into shipping 
 values 
-('666666', 'Leave at door');
+('A00006', 'Leave at door');
 
 insert into shipping 
 values 
-('777777', 'Leave on stair'); 
+('A00007', 'Leave on stair'); 
 
 insert into shipping 
 values 
-('888888', 'N/A');
+('A00008', 'N/A');
 
 insert into shipping 
 values 
-('999999', 'N/A');
+('A00009', 'N/A');
 
 insert into shipping 
 values 
-('121212', 'Leave by fence');    
+('A00010', 'Leave by fence');    
 
 insert into shipping 
 values 
-('131313', 'Leave on stair');
+('A00011', 'Leave on stair');
 
 insert into shipping 
 values 
-('141414', 'Leave at door');
+('A00012', 'Leave at door');
 
 insert into shipping 
 values 
-('151515', 'N/A');
+('A00013', 'N/A');
 
 insert into shipping 
 values 
-('161616', 'Leave on stair');    
-
+('A00014', 'Leave on stair');   
 insert into shipping 
 values 
-('171717', 'Leave by fence');
+('A00015', 'Leave by fence');
  
 
  /*
@@ -342,49 +339,49 @@ Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
 */
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('a123456', 'C00001',  35, 'PENDING', '01-Jan-2023');
+VALUES('a12345', 'C00001',  35, 'PENDING', '01-Jan-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('b123456', 'C00002',  40, 'SHIPPED', '03-Mar-2023');
+VALUES('b12345', 'C00002',  40, 'SHIPPED', '03-Mar-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('c123456', 'C00003',  23, 'INVOICED', '08-Aug-2023');
+VALUES('c12345', 'C00003',  23, 'INVOICED', '08-Aug-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('d123456', 'C00004', 20,'RETURNED', '10-OCT-2023');
+VALUES('d12345', 'C00004', 20,'RETURNED', '10-OCT-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('e123456', 'C00005',  32, 'INVOICED', '01-Jan-2023');
+VALUES('e12345', 'C00005',  32, 'INVOICED', '01-Jan-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('f123456', 'C00006',  48, 'RETURNED', '04-Apr-2023');
+VALUES('f12345', 'C00006',  48, 'RETURNED', '04-Apr-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('g123456', 'C00007', 50, 'SHIPPED', '12-Dec-2023');
+VALUES('g12345', 'C00007', 50, 'SHIPPED', '12-Dec-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('h123456', 'C00008' 37, 'PENDING', '01-Jan-2023');
+VALUES('h12345', 'C00008', 37, 'PENDING', '01-Jan-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('i123456', 'C00009', 24, 'INVOICED', '09-Sep-2023');
+VALUES('i12345', 'C00009', 24, 'INVOICED', '09-Sep-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('j123456', 'C00010',  43, 'PENDING', '01-Jan-2023');
+VALUES('j12345', 'C00010',  43, 'PENDING', '01-Jan-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('k123456', 'C00011',27,'SHIPPED', '07-Jul-2023');
+VALUES('k12345', 'C00011',27,'SHIPPED', '07-Jul-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('l123456', 'C00012' 55, 'INVOICED', '02-Feb-2023');
+VALUES('l12345', 'C00012', 55, 'INVOICED', '02-Feb-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('m123456', 'C00013', 58, 'PENDING', '06-Jun-2023');
+VALUES('m12345', 'C00013', 58, 'PENDING', '06-Jun-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('n123456', 'C00014', 22, 'SHIPPED', '11-Nov-2023');
+VALUES('n12345', 'C00014', 22, 'SHIPPED', '11-Nov-2023');
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
-VALUES('o123456','C00015',, 23, 'PENDING', '05-May-2023');
+VALUES('o12345','C00015', 23, 'PENDING', '05-May-2023');
 
 /*
 Shipment - Drew
@@ -398,50 +395,49 @@ shipment - jacky
 */
 
 insert into shipment
-values ('sh0000','111111','a123456', 'PICK', null);
+values ('sh0000','A00001','a12345', 'PICK', null);
 
 insert into shipment
-values ('sh0001','222222' ,'b123456', 'PICK', null);
+values ('sh0001','A00002' ,'b12345', 'PICK', null);
 
 insert into shipment
-values ('sh0002','333333','c123456', 'PICK', null);
+values ('sh0002','A00003','c12345', 'PICK', null);
 
 insert into shipment
-values ('sh0003','444444','d123456', 'PICK', null);
+values ('sh0003','A00004','d12345', 'PICK', null);
 
 insert into shipment
-values ('sh0004','555555','e123456', 'PACK', null);
+values ('sh0004','A00005','e12345', 'PACK', null);
 
 insert into shipment
-values ('sh0005','666666' ,'f123456', 'PACK', null);
+values ('sh0005','A00006','f12345', 'PACK', null);
 
 insert into shipment
-values ('sh0006','777777','g123456', 'PACK', null);
+values ('sh0006','A00007','g12345', 'PACK', null);
 
 insert into shipment
-values ('sh0007','888888','h123456', 'PACK', null);
+values ('sh0007','A00008','h12345', 'PACK', null);
 
 insert into shipment
-values ('sh0008','999999','i123456', 'SHIP','02-Dec-2023');
+values ('sh0008','A00009','i12345', 'SHIP','02-Dec-2023');
 
 insert into shipment
-values ('sh0009','121212' ,'j123456', 'SHIP','03-Dec-2023');
+values ('sh0009','A00010' ,'j12345', 'SHIP','03-Dec-2023');
 
 insert into shipment
-values ('sh0010','131313' ,'k123456', 'SHIP','04-Dec-2023');
+values ('sh0010','A00011' ,'k12345', 'SHIP','04-Dec-2023');
 
 insert into shipment
-values ('sh0011','141414' ,'l123456', 'SHIP','05-Dec-2023');
+values ('sh0011','A00012' ,'l12345', 'SHIP','05-Dec-2023');
 
 insert into shipment
-values ('sh0012','151515','m123456', 'SHIP','06-Dec-2023');
+values ('sh0012','A00013','m12345', 'SHIP','06-Dec-2023');
 
 insert into shipment
-values ('sh0013','161616','n123456', 'SHIP','07-Dec-2023');
+values ('sh0013','A00014','n12345', 'SHIP','07-Dec-2023');
 
 insert into shipment
-values ('sh0014','171717' ,'o123456', 'SHIP','08-Dec-2023');
-
+values ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
 
 /*
    Shyna catalog_Items insert statements
@@ -750,52 +746,52 @@ values
 /*
 Line_items
 
-line_items(ORDER_ID, SKU, quantity, price)
+line_items
     foreign key (ORDER_ID) refrences Order
     foreign key (SKU) refrences Catalog_Items
 */
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('a123456', 'SKU001',2, 12);
+INSERT INTO line_items
+VALUES('a12345', 'SKU001',2, 12);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('b123456', 'SKU002',6, 300);
+INSERT INTO line_items
+VALUES('b12345', 'SKU002',6, 300);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('c123456', 'SKU003',4, 200);
+INSERT INTO line_items
+VALUES('c12345', 'SKU003',4, 200);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('d123456', 'SKU004',7, 400 );
+INSERT INTO line_items
+VALUES('d12345', 'SKU004',7, 400 );
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('e123456', 'SKU005',2, 90);
+INSERT INTO line_items
+VALUES('e12345', 'SKU005',2, 90);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('f123456', 'SKU006',1, 12);
+INSERT INTO line_items
+VALUES('f12345', 'SKU006',1, 12);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('g123456', 'SKU007',5, 100);
+INSERT INTO line_items
+VALUES('g12345', 'SKU007',5, 100);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('h123456', 'SKU008',9, 500);
+INSERT INTO line_items
+VALUES('h12345', 'SKU008',9, 500);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('i123456', 'SKU009',3, 130);
+INSERT INTO line_items
+VALUES('i12345', 'SKU009',3, 130);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('j123456', 'SKU010',8, 600);
+INSERT INTO line_items
+VALUES('j12345', 'SKU010',8, 600);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('k123456', 'SKU011',2, 124);
+INSERT INTO line_items
+VALUES('k12345', 'SKU011',2, 124);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('l123456', 'SKU012',7, 356);
+INSERT INTO line_items
+VALUES('l12345', 'SKU012',7, 356);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('m123456', 'SKU013',9, 127);
+INSERT INTO line_items
+VALUES('m12345', 'SKU013',9, 127);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('n123456', 'SKU014',4, 110);
+INSERT INTO line_items
+VALUES('n12345', 'SKU014',4, 110);
 
-INSERT INTO line_items(ORDER_ID, SKU, quantity, price)
-VALUES('o123456', 'SKU015',9, 700);
+INSERT INTO line_items
+VALUES('o12345', 'SKU015',9, 700);
