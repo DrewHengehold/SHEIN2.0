@@ -2,7 +2,7 @@
 
     Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
     CS 325 - Fall 2023
-    LAST MODIFIED DATE: 10-Nov-2023
+    LAST MODIFIED DATE: 17-Nov-2023
 
     ---------------------------
     PROJECT DESIGN MILESTONE #2
@@ -14,25 +14,31 @@
     Drop all tables
 */
 
-drop table User;
-drop table Customer_Profile;
-drop table Line_Items;
-drop table Order;
-drop table Payment_Info;
-drop table Shipment;
-drop table Shipping;
-drop table Billing;
+drop table new_user             cascade constraints;
+drop table customer_Profile     cascade constraints;
+drop table line_Items           cascade constraints;
+drop table orders                cascade constraints;
+drop table payment_Info         cascade constraints;
+drop table shipment             cascade constraints;
+drop table shipping             cascade constraints;
+drop table billing              cascade constraints;
+drop table addy              cascade constraints;
+drop table catalog_Items        cascade constraints;
+drop table bottoms              cascade constraints;
+drop table tops                 cascade constraints;
+drop table shoes                cascade constraints;
 
 /*
     Table: User
     Desc: Stores user web-profile information
 */
 
-create table User
+create table new_user
 (
     USER_NAME       varchar2 (25),
     password        varchar2 (25),
-    user_type       ENUM ('ADMIN', 'CUSTOMER')
+    user_type       varchar2 (8) check(user_type in('ADMIN', 'CUSTOMER')),
+    primary key (USER_NAME)
 );
 
 /*
@@ -40,50 +46,18 @@ create table User
     Desc: Stores basic customer information and contact info
 */
 
-create table Customer_Profile
+create table customer_Profile
 (
     CUSTOMER_ID     char (6), 
     user_name       varchar2 (25), 
-    card_name       varchar2 (25), 
     fname           varchar2 (25), 
     lname           varchar2 (25), 
     phone           char (10), 
-    email           varchar2 (25)     
+    email           varchar2 (25),
+    primary key( CUSTOMER_ID),
+    foreign key(user_name) references new_user(USER_NAME)
 );
 
-/*
-    Table: Line_Items
-    Desc: Stores line item's quantity and price for an order from the catalog
-    References: Order, Catalog.
-*/
-
-create table Line_Items
-(
-    ORDER_ID        char (6),
-    SKU             char (6),
-    quantity        integer,
-    price           integer,
-    primary key     (ORDER_ID, SKU),
-    foreign key     (ORDER_ID)      references Order (ORDER_ID),
-    foreign key     (SKU)           references Catalog (SKU)
-);
-
-/*
-    Table: Order
-    Desc: Tracks order's status and order date. 
-    References: Customer_Profile.
-*/
-
-create table Order
-(
-    ORDER_ID        char (6),
-    customer_id     char (6),
-    order_total     number,
-    order_states    ENUM ('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED'),
-    date_ordered    date,
-    primary key     (ORDER_ID),
-    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
-);
 
 /*
     Table: Payment_Info
@@ -91,7 +65,7 @@ create table Order
     References: Customer_Profile.
 */
 
-create table Payment_Info
+create table payment_Info
 (
     CARD_NUM        char (16), 
     customer_id     char (6), 
@@ -99,25 +73,28 @@ create table Payment_Info
     exp_date        varchar2 (25) not null, 
     billing_email   varchar2 (25),
     primary key     (CARD_NUM),
-    foreign key     (customer_id)   references Customer_Profile (CUSTOMER_ID)
+    foreign key     (customer_id)   references customer_profile (CUSTOMER_ID)
 );
 
+
+
 /*
-    Table: Shipment
-    Desc: Tracks shipment's status and delivery date. 
-    References: Order, Shipment.
+    Table: Address
+    Desc: Stores user's address info. 
 */
-create table Shipment
+
+create table addy
 (
-    SHIPMENT_ID     char (6), 
-    address_id      char (6), 
-    order_id        char (6), 
-    ship_status     ENUM('PICK', 'PACK', 'SHIP'), 
-    delivery_date   date,
-    primary key     (SHIPMENT_ID),
-    foreign key     (address_id)    references Shipping (ADDRESS_ID),
-    foreign key     (order_id)      references Order (ORDER_ID)
+    ADDRESS_ID      char(6),
+    customer_id     char(6),
+    street          char(6),
+    city            varchar(25),
+    us_state        char(6),
+    zip             char(5),
+    primary key     (ADDRESS_ID),
+    foreign key     (customer_id) references customer_profile(CUSTOMER_ID)
 );
+
 
 /*
     Table: Shipping
@@ -125,13 +102,12 @@ create table Shipment
     References: Address.
 */
 
-create table Shipping
+create table shipping
  (
-    ADDRESS_ID      char (6),
-    instructions    varchar2 (45),
+    ADDRESS_ID      char(6),
+    ship_instructions    varchar2 (45),
     primary key     (ADDRESS_ID),
-    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID)
-
+    foreign key     (ADDRESS_ID) references addy(ADDRESS_ID)
   );
 
 /*
@@ -140,67 +116,125 @@ create table Shipping
     References: Address, Payment_Info.
 */
 
-create table Billing 
+create table billing 
   (
-    ADDRESS_ID      varchar2 (25),
+    ADDRESS_ID      char(6),
     CARD_NUM        char (16),
     primary key     (ADDRESS_ID, CARD_NUM),
-    foreign key     (ADDRESS_ID)    references Address (ADDRESS_ID),
-    foreign key     (CARD_NUM)      references Payment_Info(CARD_NUM)
+    foreign key     (ADDRESS_ID) references addy(ADDRESS_ID),
+    foreign key     (CARD_NUM)      references payment_info(CARD_NUM)
   );
 
+/*
+    Table: Order
+    Desc: Tracks order's status and order date. 
+    References: Customer_Profile.
+*/
 
-
-
-create table Address
+create table orders
 (
-    ADDRESS_ID   char(6),
-    street       char(6),
-    city         varchar(25),
-    us_state       char(6),
-    zip          char(5),
-    primary key   (ADDRESS_ID)
+    ORDER_ID        char (6),
+    customer_id     char (6),
+    order_total     number,
+    order_states    varchar2 (8) check(order_states in('PENDING', 'SHIPPED', 'INVOICED', 'RETURNED')),
+    date_ordered    date,
+    primary key     (ORDER_ID),
+    foreign key     (customer_id)   references customer_profile (CUSTOMER_ID)
 );
 
-
-create table Catalog_Items (
-    SKU                char(6),
-    item_name          varchar(25),
-    item_description   varchar(100),
-    listed_price       decimal(10, 2),
-    avail_quantity     integer,
-    gender             varchar(10),
-    item_color         varchar(20)
-    primary key        (SKU)
+/*
+    Table: Shipment
+    Desc: Tracks shipment's status and delivery date. 
+    References: Order, Shipment.
+*/
+create table shipment
+(
+    SHIPMENT_ID     char (6), 
+    address_id      char (6), 
+    order_id        char (6), 
+    ship_status     varchar2 (4) check(ship_status in('PICK', 'PACK', 'SHIP')), 
+    delivery_date   date,
+    primary key     (SHIPMENT_ID),
+    foreign key     (address_id)    references shipping (ADDRESS_ID),
+    foreign key     (order_id)      references orders (ORDER_ID)
 );
 
+/*
+    Table: Catalog_Items
+    Desc: Stores user's address info. 
+*/
 
-
-create table Bottoms (
-    SKU           char(6),
-    waist_size    integer,
-    material      varchar(25),
-    primary key   (SKU)
-    foreign key   (SKU) REFERENCES Catalog_Items(SKU)
+Create table catalog_Items
+(
+    SKU             char(8),               
+    item_name       varchar2(25),
+    item_desc       varchar2(40),
+    listed_price    decimal(5,2),
+    avail_quantity  integer,
+    gender          varchar2 (1) check(gender in('W', 'M')),
+    item_color      varchar2(10),
+    primary key     (SKU)
 );
 
+/*
+    Table: Bottoms
+    Desc: Stores bottoms catalog info. 
+    References: Catalog_Items.
+*/
 
-create table Tops (
-    SKU                 varchar(6),
-    sleeve_length       varchar(10),
-    neck_line_type      varchar(10),
-    primary key         (SKU)
-    foreign key (SKU)   references Catalog_Items(SKU)
+Create table bottoms 
+(
+    waist_size      decimal(3,1),
+    material        varchar2(15),
+    SKU             char(8),
+    primary key     (SKU),
+    foreign key     (SKU) references catalog_items (SKU)
 );
 
+/*
+    Table: Tops
+    Desc: Stores tops catalog info. 
+    References: Catalog_Items.
+*/
 
-create table Shoes (
-    SKU           varchar(6),
-    shoe_size     integer,
-    shoe_type     varchar(25),
-    primary key   (SKU)
-    foreign key   (SKU) REFERENCES Catalog_Items(SKU)
+Create table tops
+(
+    top_size        varchar2 (1) check(top_size in('S', 'M', 'L')),
+    sleeve_length   varchar2 (5) check(sleeve_length in('Long', 'Short')),         
+    SKU             char(8),
+    neckline_type   varchar2(10),
+    primary key     (SKU),
+    foreign key     (SKU) references catalog_items (SKU)
 );
 
+/*
+    Table: Shoes
+    Desc: Stores shoe catalog info . 
+    References: Catalog_Items.
+*/
 
+Create table shoes
+(
+    shoe_size       decimal(3,1),
+    shoe_type       varchar2(15),
+    SKU             char(8),
+    primary key     (SKU),
+    foreign key     (SKU) references catalog_items (SKU)
+);
 
+/*
+    Table: Line_Items
+    Desc: Stores line item's quantity and price for an order from the catalog
+    References: Order, Catalog.
+*/
+
+create table line_Items
+(
+    ORDER_ID        char (6),
+    SKU             char (6),
+    quantity        integer,
+    price           integer,
+    primary key     (ORDER_ID, SKU),
+    foreign key     (ORDER_ID)      references orders (ORDER_ID),
+    foreign key     (SKU)           references catalog_Items (SKU)
+);
