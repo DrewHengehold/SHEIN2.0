@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <link rel="stylesheet" href="login.css">
     <title>login</title>
 </head>
-<body style="background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">
-    <div class="ourform">
+
+<body style="background-image: linear-gradient(to bottom right, rgb(223, 235, 234), rgb(190, 252, 228)); background-attachment: fixed;">  
+    <div>
         <form action="login.php" method="post" id="loginForm">
             <div class="container">
                 <label for="uname"><b>Username</b></label>
@@ -16,41 +18,9 @@
             
                 <button class="thisbutton" type="button" id="login">Login</button>
                 
-                <a class="thisbutton" type="button" id="create" href="createprofile.html">Create Account</button>
+                <button onclick = "window.location.href = 'createprofile.html';"class="thisbutton" type="button" id="create">Create Account</button>
             </div>
         </form>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginButton = document.getElementById("login");
-            const loginForm = document.getElementById("loginForm");
-
-            loginButton.addEventListener("click", function () {
-                const username = loginForm.uname.value;
-                const password = loginForm.psw.value;
-
-                // Send an AJAX request to your server for authentication
-                const xhr = new XMLHttpRequest();
-                xhr.open("POST", "login.php"); // Replace with the URL of your server-side authentication script
-                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        const response = xhr.responseText;
-                        if (response === "success") {
-                            // Authentication successful, redirect to the index page
-                            window.location.href = "index.html"; // Replace with your actual index page URL
-                        } else {
-                            alert("Invalid username or password");
-                        }
-                    }
-                };
-
-                // Send the username and password to the server
-                const data = "uname=" + username + "&psw=" + password;
-                xhr.send(data);
-            });
-        });
-    </script>
 </body>
 </html>

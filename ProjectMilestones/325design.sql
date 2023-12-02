@@ -54,7 +54,7 @@ create table customer_Profile
     lname           varchar2 (25), 
     phone           char (10), 
     email           varchar2 (25),
-    primary key( CUSTOMER_ID),
+    primary key(CUSTOMER_ID),
     foreign key(user_name) references new_user(USER_NAME)
 );
 
@@ -69,8 +69,8 @@ create table payment_Info
 (
     CARD_NUM        char (16), 
     customer_id     char (6), 
-    name_on_card    varchar2 (25) not null, 
-    exp_date        varchar2 (25) not null, 
+    name_on_card    varchar2 (25), 
+    exp_date        varchar2 (25), 
     billing_email   varchar2 (25),
     primary key     (CARD_NUM),
     foreign key     (customer_id)   references customer_profile (CUSTOMER_ID)
@@ -87,9 +87,9 @@ create table addy
 (
     ADDRESS_ID      char(6),
     customer_id     char(6),
-    street          char(6),
+    street          varchar(25),
     city            varchar(25),
-    us_state        char(6),
+    us_state        char(2),
     zip             char(5),
     primary key     (ADDRESS_ID),
     foreign key     (customer_id) references customer_profile(CUSTOMER_ID)
@@ -168,7 +168,7 @@ Create table catalog_Items
 (
     SKU             char(8),               
     item_name       varchar2(25),
-    item_desc       varchar2(40),
+    item_desc       varchar2(50),
     listed_price    decimal(5,2),
     avail_quantity  integer,
     gender          varchar2 (1) check(gender in('W', 'M')),
@@ -184,9 +184,9 @@ Create table catalog_Items
 
 Create table bottoms 
 (
-    waist_size      decimal(3,1),
-    material        varchar2(15),
     SKU             char(8),
+    waist_size      number,
+    material        varchar2(15),
     primary key     (SKU),
     foreign key     (SKU) references catalog_items (SKU)
 );
@@ -199,9 +199,9 @@ Create table bottoms
 
 Create table tops
 (
+    SKU             char(8),
     top_size        varchar2 (1) check(top_size in('S', 'M', 'L')),
     sleeve_length   varchar2 (5) check(sleeve_length in('Long', 'Short')),         
-    SKU             char(8),
     neckline_type   varchar2(10),
     primary key     (SKU),
     foreign key     (SKU) references catalog_items (SKU)
@@ -215,9 +215,9 @@ Create table tops
 
 Create table shoes
 (
+    SKU             char(8),
     shoe_size       decimal(3,1),
     shoe_type       varchar2(15),
-    SKU             char(8),
     primary key     (SKU),
     foreign key     (SKU) references catalog_items (SKU)
 );
