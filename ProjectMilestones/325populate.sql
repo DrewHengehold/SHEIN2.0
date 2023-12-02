@@ -447,6 +447,8 @@ values ('sh0014', , , 'SHIP', null)
               avail_quatity, gender, item_color)
 */
 
+--Bottoms
+
 insert into catalog_Items
 values
 ('SKU001', 'Pants', 'Comfortable pants for women', 29.99, 20, 'W', 'Blue');
@@ -496,6 +498,7 @@ insert into catalog_Items
 values
 ('SKU012', 'Straight leg jeans', 'Cotton ripped straight leg jeans for men', 32.99, 30, 'M', 'Light blue');
 
+--Tops
 
 insert into catalog_Items
 values
@@ -544,6 +547,7 @@ insert into catalog_Items
 values
 ('SKU022', 'Men zip-up sweatshirt', 'Solid zip up funnel neck sweatshirt', 27.99, 20, 'M', 'Dark grey');
 
+--Shoes
 
 insert into catalog_Items
 values
@@ -589,409 +593,113 @@ values
 /*
 bottoms
 
-bottoms(SKU, material)
+Bottoms(SKU, waist_size, material)
     foreign key (SKU) refrences Catalog_Items
 */
 
 
 insert into bottoms
 values
-('SKU001', 'Cotton' );
+('SKU001', 26,'Cotton' );
 
 insert into bottoms
 values
-('SKU002', 'Spandex' );
+('SKU002', 27,'Spandex' );
 
 insert into bottoms
 values
-('SKU003', 'Denim');
-
-
-insert into bottoms
-values
-('SKU004', 'Polyster');
-
-insert into bottoms
-values
-('SKU005', 'Cotton');
+('SKU003', 30,'Denim');
 
 
 insert into bottoms
 values
-('SKU006', 'Polyster');
+('SKU004', 31,'Polyster');
+
+insert into bottoms
+values
+('SKU005', 30,'Cotton');
 
 
 insert into bottoms
 values
-('SKU007', 'Polyster');
-
-insert into bottoms
-values
-('SKU008', 'Spandex');
-
-insert into bottoms
-values
-('SKU009', 'Spandex');
-
-insert into bottoms
-values
-('SKU010', 'Polyster');
-
-insert into bottoms
-values
-('SKU011', 'Cotton');
+('SKU006', 31,'Polyster');
 
 
 insert into bottoms
 values
-('SKU012', 'Cotton');
+('SKU007', 28,'Polyster');
 
-
-/*
- --------bottom_sizes 
-
-        bottom_sizes(WAIST_SIZE, SKU)
-             foreign key (SKU) references bottoms(SKU)
-
-*/
-
-insert into bottom_sizes
+insert into bottoms
 values
-(26, 'SKU001');
+('SKU008', 27,'Spandex');
 
-insert into bottom_sizes
+insert into bottoms
 values
-(27, 'SKU001');
+('SKU009', 26,'Spandex');
 
-insert into bottom_sizes
+insert into bottoms
 values
-(28, 'SKU001');
+('SKU010', 29,'Polyster');
 
-
-insert into bottom_sizes
+insert into bottoms
 values
-(26, 'SKU002');
+('SKU011', 30,'Cotton');
 
-insert into bottom_sizes
+
+insert into bottoms
 values
-(27, 'SKU002');
-
-insert into bottom_sizes
-values
-(28, 'SKU002');
-
-insert into bottom_sizes
-values
-(26, 'SKU003');
-
-insert into bottom_sizes
-values
-(27, 'SKU003');
-
-insert into bottom_sizes
-values
-(28, 'SKU003');
-
-
-insert into bottom_sizes
-values
-(26, 'SKU004');
-
-insert into bottom_sizes
-values
-(27, 'SKU004');
-
-
-insert into bottom_sizes
-values
-(28, 'SKU004');
-
-insert into bottom_sizes
-values
-(26, 'SKU005');
-
-insert into bottom_sizes
-values
-(27, 'SKU005');
-
-insert into bottom_sizes
-values
-(28, 'SKU005');
-
-
-insert into bottom_sizes
-values
-(26, 'SKU006');
-
-insert into bottom_sizes
-values
-(27, 'SKU006');
-
-insert into bottom_sizes
-values
-(28, 'SKU006');
-
-insert into bottom_sizes
-values
-(32, 'SKU007');
-
-insert into bottom_sizes
-values
-(34, 'SKU007');
-
-insert into bottom_sizes
-values
-(36, 'SKU007');
-
-insert into bottom_sizes
-values
-(32, 'SKU008');
-
-insert into bottom_sizes
-values
-(34, 'SKU008');
-
-insert into bottom_sizes
-values
-(36, 'SKU008');
-
-insert into bottom_sizes
-values
-(32, 'SKU009');
-
-insert into bottom_sizes
-values
-(34, 'SKU009');
-
-insert into bottom_sizes
-values
-(36, 'SKU009');
-
-insert into bottom_sizes
-values
-(32, 'SKU010');
-
-insert into bottom_sizes
-values
-(34, 'SKU010');
-
-insert into bottom_sizes
-values
-(36, 'SKU010');
-
-
-insert into bottom_sizes
-values
-(32, 'SKU011');
-
-insert into bottom_sizes
-values
-(34, 'SKU011');
-
-insert into bottom_sizes
-values
-(36, 'SKU011');
-
-
-insert into bottom_sizes
-values
-(32, 'SKU012');
-
-insert into bottom_sizes
-values
-(34, 'SKU012');
-
-insert into bottom_sizes
-values
-(36, 'SKU012');
-
-
-
-
+('SKU012', 31,'Cotton');
 
 
 /*
 tops
 
-tops(SKU, sleeve_length, neck_line_type)
+Tops(SKU, top_size, sleeve_length, neck_line_type)
     foreign key (SKU) refrences Catalog_Items
 */
 
 
 insert into tops
 values
-('SKU013', 'Short', 'Round');
+('SKU013', 'S','Short', 'Round');
 
 
 insert into tops
 values
-('SKU014', 'Long', 'Round-Neck' );
+('SKU014', 'M','Long', 'Round-Neck' );
 
 insert into tops
 values
-('SKU015', 'Long', 'V-Neck' );
+('SKU015', 'L','Long', 'V-Neck' );
 
 insert into tops
 values
-('SKU016', 'Short', 'High-Neck' );
+('SKU016', 'S','Short', 'High-Neck' );
 
 insert into tops
 values
-('SKU017', 'Long', 'High-Neck' );
+('SKU017', 'M','Long', 'High-Neck' );
 
 
 insert into tops
 values
-('SKU018', 'Short', 'Round-Neck' );
+('SKU018', 'L','Short', 'Round-Neck' );
 
 insert into tops
 values
-('SKU019', 'Long', 'Collar' );
+('SKU019', 'M','Long', 'Collar' );
 
 insert into tops
 values
-('SKU020', 'Long', 'Hooded' );
+('SKU020', 'M','Long', 'Hooded' );
 
 insert into tops
 values
-('SKU021', 'Long', 'Crew-Neck' );
+('SKU021', 'S','Long', 'Crew-Neck' );
 
 insert into tops
 values
-('SKU022', 'Long', 'Round' );
-
-
-
-/*
-  ---------top_sizes
-
-        top_sizes(TOP_SIZE, SKU)
-           foreign key (SKU) references tops(SKU)
-
-*/
-
-
-
-
-insert into top_sizes
-values
-('S', 'SKU013');
-
-insert into top_sizes
-values
-('M', 'SKU013');
-
-insert into top_sizes
-values
-('L', 'SKU013');
-
-insert into top_sizes
-values
-('S', 'SKU014');
-
-insert into top_sizes
-values
-('M', 'SKU014');
-
-insert into top_sizes
-values
-('L', 'SKU014');
-
-insert into top_sizes
-values
-('S', 'SKU015');
-
-insert into top_sizes
-values
-('M', 'SKU015');
-
-insert into top_sizes
-values
-('L', 'SKU015');
-
-insert into top_sizes
-values
-('S', 'SKU016');
-
-insert into top_sizes
-values
-('M', 'SKU016');
-
-insert into top_sizes
-values
-('L', 'SKU016');
-
-insert into top_sizes
-values
-('S', 'SKU017');
-
-insert into top_sizes
-values
-('M', 'SKU017');
-
-insert into top_sizes
-values
-('L', 'SKU017');
-
-insert into top_sizes
-values
-('S', 'SKU018');
-
-insert into top_sizes
-values
-('M', 'SKU018');
-
-insert into top_sizes
-values
-('L', 'SKU018');
-
-insert into top_sizes
-values
-('S', 'SKU019');
-
-insert into top_sizes
-values
-('M', 'SKU019');
-
-insert into top_sizes
-values
-('L', 'SKU019');
-
-insert into top_sizes
-values
-('S', 'SKU020');
-
-insert into top_sizes
-values
-('M', 'SKU020');
-
-insert into top_sizes
-values
-('L', 'SKU020');
-
-insert into top_sizes
-values
-('S', 'SKU021');
-
-insert into top_sizes
-values
-('M', 'SKU021');
-
-insert into top_sizes
-values
-('L', 'SKU021');
-
-insert into top_sizes
-values
-('S', 'SKU022');
-
-insert into top_sizes
-values
-('M', 'SKU022');
-
-insert into top_sizes
-values
-('L', 'SKU022');
+('SKU022', 'L','Long', 'Round' );
 
 
 
@@ -999,146 +707,42 @@ values
 /*
 shoes
 
-shoes(SKU, shoe_type)
+Shoes(SKU, shoe_size, shoe_type)
     foreign key (SKU) refrences Catalog_Items
 */
 
 
 insert into shoes
 values
-('SKU023', 'Sandals');
+('SKU023', 7,'Sandals');
 
 insert into shoes
 values
-('SKU024', 'Sneaker');
+('SKU024', 8,'Sneaker');
 
 insert into shoes
 values
-('SKU025', 'Sports');
+('SKU025', 11,'Sports');
 
 insert into shoes
 values
-('SKU026', 'Wedge sneaker');
+('SKU026', 9,'Wedge sneaker');
 
 insert into shoes
 values
-('SKU027', 'Sneaker');
+('SKU027', 8,'Sneaker');
 
 insert into shoes
 values
-('SKU028', 'Boots');
+('SKU028', 10,'Boots');
 
 insert into shoes
 values
-('SKU029', 'Loafers');
+('SKU029', 9,'Loafers');
 
 insert into shoes
 values
-('SKU030', 'Dress shoes');
-
-
-/*
- ---------shoe_sizes
-
-      shoe_sizes(SHOE_SIZE, SKU)
-           foreign key (SKU) references shoes(SKU)
-*/
-
-insert into shoe_sizes
-values
-(7, 'SKU023');
-
-insert into shoe_sizes
-values
-(8, 'SKU023');
-
-insert into shoe_sizes
-values
-(9, 'SKU023');
-
-insert into shoe_sizes
-values
-(7, 'SKU024');
-
-insert into shoe_sizes
-values
-(8, 'SKU024');
-
-insert into shoe_sizes
-values
-(9, 'SKU024');
-
-insert into shoe_sizes
-values
-(7, 'SKU025');
-
-insert into shoe_sizes
-values
-(8, 'SKU025');
-
-insert into shoe_sizes
-values
-(9, 'SKU025');
-
-insert into shoe_sizes
-values
-(7, 'SKU026');
-
-insert into shoe_sizes
-values
-(8, 'SKU026');
-
-insert into shoe_sizes
-values
-(9, 'SKU026');
-
-insert into shoe_sizes
-values
-(10, 'SKU027');
-
-insert into shoe_sizes
-values
-(11, 'SKU027');
-
-insert into shoe_sizes
-values
-(12, 'SKU027');
-
-insert into shoe_sizes
-values
-(10, 'SKU028');
-
-insert into shoe_sizes
-values
-(11, 'SKU028');
-
-insert into shoe_sizes
-values
-(12, 'SKU028');
-
-insert into shoe_sizes
-values
-(10, 'SKU029');
-
-insert into shoe_sizes
-values
-(11, 'SKU029');
-
-insert into shoe_sizes
-values
-(12, 'SKU029');
-
-insert into shoe_sizes
-values
-(10, 'SKU030');
-
-insert into shoe_sizes
-values
-(11, 'SKU030');
-
-insert into shoe_sizes
-values
-(12, 'SKU030');
+('SKU030', 8,'Dress shoes');
 
 
 
