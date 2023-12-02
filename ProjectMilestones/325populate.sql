@@ -160,13 +160,56 @@ INSERT INTO payment_info (CARD_NUM, customer_id, name_on_card, exp_date, billing
 VALUES ('7777777777777777', 'CUST14', 'Isabella Nguyen', '01/25', 'isabella@example.com');
 
 /*
- addy
+ Forrest - addy
 
 addy(ADDRESS_ID, customer_id, street, city, state, zip)
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
 
 */
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00001', 'C00001', '123 Main St', 'Anytown', 'CA', '12345');
 
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00002', 'C00002', '456 Oak Ave', 'Somewhereville', 'NY', '54321');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00003', 'C00003', '789 Elm Blvd', 'Nowhere City', 'TX', '67890');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00004', 'C00004', '101 Pine Ln', 'Smalltown', 'FL', '13579');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00005', 'C00005', '202 Maple Dr', 'Big City', 'IL', '24680');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00006', 'C00006', '303 Birch St', 'Anywhere', 'AZ', '98765');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00007', 'C00007', '404 Cedar Ave', 'Everytown', 'WA', '11223');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00008', 'C00008', '505 Redwood Rd', 'Middleofnowhere', 'GA', '33445');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00009', 'C00009', '606 Spruce Blvd', 'Hometown', 'MI', '55667');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00010', 'C00010', '707 Cedar Ln', 'Downtown', 'OR', '77889');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00011', 'C00011', '808 Pine Dr', 'Uptown', 'NC', '99001');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00012', 'C00012', '909 Elm St', 'Suburbia', 'SC', '11234');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00013', 'C00013', '121 Oak Blvd', 'Countryside', 'PA', '22345');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00014', 'C00014', '232 Pine Dr', 'Metropolis', 'NJ', '33456');
+
+INSERT INTO addy (ADDRESS_ID, customer_id, street, city, us_state, zip) 
+VALUES ('A00015', 'C00015', '343 Maple Ln', 'Village', 'UT', '44567');
 
 /*
 Billing
@@ -250,14 +293,6 @@ Order - Drew
 
 Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
     foreign key (customer_id) refrences Customer_Profile
-*/
-
-/*
-Line_items
-
-line_items(ORDER_ID, SKU, quantity, price)
-    foreign key (ORDER_ID) refrences Order
-    foreign key (SKU) refrences Catalog_Items
 */
 
 /*
@@ -430,5 +465,14 @@ tops(SKU, top_size, sleeve_length, neck_line_type)
 shoes
 
 shoes(SKU, shoe_size, shoe_type)
+    foreign key (SKU) refrences Catalog_Items
+*/
+
+
+/*
+Line_items
+
+line_items(ORDER_ID, SKU, quantity, price)
+    foreign key (ORDER_ID) refrences Order
     foreign key (SKU) refrences Catalog_Items
 */
