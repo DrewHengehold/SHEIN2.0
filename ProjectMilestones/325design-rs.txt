@@ -40,7 +40,7 @@ Shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     Shipment(address_id) refrences shipping
     Shipment(order_id) refrences Order
 
---Shyna
+--Soran
 Catalog_Items(SKU, item_name, item_description, listed_price,
               avail_quatity, gender, item_color)
 

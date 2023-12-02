@@ -150,7 +150,9 @@ create table Billing
   );
 
 
-create table address
+
+
+create table Address
 (
     ADDRESS_ID   char(6),
     street       char(6),
@@ -159,3 +161,46 @@ create table address
     zip          char(5),
     primary key   (ADDRESS_ID)
 );
+
+
+create table Catalog_Items (
+    SKU                char(6),
+    item_name          varchar(25),
+    item_description   varchar(100),
+    listed_price       decimal(10, 2),
+    avail_quantity     integer,
+    gender             varchar(10),
+    item_color         varchar(20)
+    primary key        (SKU)
+);
+
+
+
+create table Bottoms (
+    SKU           char(6),
+    waist_size    integer,
+    material      varchar(25),
+    primary key   (SKU)
+    foreign key   (SKU) REFERENCES Catalog_Items(SKU)
+);
+
+
+create table Tops (
+    SKU                 varchar(6),
+    sleeve_length       varchar(10),
+    neck_line_type      varchar(10),
+    primary key         (SKU)
+    foreign key (SKU)   references Catalog_Items(SKU)
+);
+
+
+create table Shoes (
+    SKU           varchar(6),
+    shoe_size     integer,
+    shoe_type     varchar(25),
+    primary key   (SKU)
+    foreign key   (SKU) REFERENCES Catalog_Items(SKU)
+);
+
+
+
