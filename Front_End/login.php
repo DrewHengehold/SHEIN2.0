@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 
 $db_conn_str = "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)
                                            (HOST = cedar.humboldt.edu)
