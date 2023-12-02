@@ -50,7 +50,6 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
 
     // Perform a query to check the credentials
     $query = "SELECT * FROM new_user WHERE username='$username' AND password='$password'";
-    $result = $conn->query($query);
 
     if ($result->num_rows == 1) {
         // Authentication successful
@@ -62,4 +61,4 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
     }
 }
 
-$conn->close();
+?>
