@@ -268,6 +268,10 @@ shipment(SHIPMENT_ID, address_id, order_id, ship_status, delivery_date)
     foreign key (order_id) refrences Order
 */
 
+/*
+shipment - jacky 
+*/
+
 insert into shipment
 values ('sh0000','111111','**', 'PICK', null)
 
