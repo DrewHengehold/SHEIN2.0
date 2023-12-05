@@ -2,7 +2,7 @@
 
     Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
     CS 325 - Fall 2023
-    LAST MODIFIED DATE: 17-Nov-2023
+    LAST MODIFIED DATE: 5-DEC-2023
 
     ---------------------------
     PROJECT DESIGN MILESTONE #2
@@ -16,14 +16,14 @@
 
 drop table new_user             cascade constraints;
 drop table customer_Profile     cascade constraints;
-drop table line_Items           cascade constraints;
+drop table line_items           cascade constraints;
 drop table orders                cascade constraints;
-drop table payment_Info         cascade constraints;
+drop table payment_info         cascade constraints;
 drop table shipment             cascade constraints;
 drop table shipping             cascade constraints;
 drop table billing              cascade constraints;
 drop table addy              cascade constraints;
-drop table catalog_Items        cascade constraints;
+drop table catalog_items        cascade constraints;
 drop table bottoms              cascade constraints;
 drop table tops                 cascade constraints;
 drop table shoes                cascade constraints;
@@ -60,12 +60,12 @@ create table customer_Profile
 
 
 /*
-    Table: Payment_Info
+    Table: Payment_info
     Desc: Holds user's card info and email for billing info to be sent to.
     References: Customer_Profile.
 */
 
-create table payment_Info
+create table payment_info
 (
     CARD_NUM        char (16), 
     customer_id     char (6), 
@@ -113,7 +113,7 @@ create table shipping
 /*
     Table: Billing
     Desc: Stores billing information. 
-    References: Address, Payment_Info.
+    References: Address, Payment_info.
 */
 
 create table billing 
@@ -160,11 +160,11 @@ create table shipment
 );
 
 /*
-    Table: Catalog_Items
+    Table: Catalog_items
     Desc: Stores user's address info. 
 */
 
-Create table catalog_Items
+Create table catalog_items
 (
     SKU             char(8),               
     item_name       varchar2(25),
@@ -179,7 +179,7 @@ Create table catalog_Items
 /*
     Table: Bottoms
     Desc: Stores bottoms catalog info. 
-    References: Catalog_Items.
+    References: Catalog_items.
 */
 
 Create table bottoms 
@@ -194,7 +194,7 @@ Create table bottoms
 /*
     Table: Tops
     Desc: Stores tops catalog info. 
-    References: Catalog_Items.
+    References: Catalog_items.
 */
 
 Create table tops
@@ -210,7 +210,7 @@ Create table tops
 /*
     Table: Shoes
     Desc: Stores shoe catalog info . 
-    References: Catalog_Items.
+    References: Catalog_items.
 */
 
 Create table shoes
@@ -228,13 +228,13 @@ Create table shoes
     References: Order, Catalog.
 */
 
-create table line_Items
+create table line_items
 (
     ORDER_ID        char (6),
-    SKU             char (6),
+    SKU             char (8),
     quantity        integer,
     price           integer,
     primary key     (ORDER_ID, SKU),
-    foreign key     (ORDER_ID)      references orders (ORDER_ID),
-    foreign key     (SKU)           references catalog_Items (SKU)
+    foreign key     (ORDER_ID) references orders(ORDER_ID),
+    foreign key     (SKU)      references catalog_items(SKU)
 );
