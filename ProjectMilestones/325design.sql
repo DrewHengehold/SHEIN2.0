@@ -15,7 +15,7 @@
 */
 
 drop table new_user             cascade constraints;
-drop table customer_Profile     cascade constraints;
+drop table customer_profile     cascade constraints;
 drop table line_items           cascade constraints;
 drop table orders               cascade constraints;
 drop table payment_info         cascade constraints;
@@ -42,11 +42,11 @@ create table new_user
 );
 
 /*
-    Table: Customer_Profile
+    Table: customer_profile
     Desc: Stores basic customer information and contact info
 */
 
-create table customer_Profile
+create table customer_profile
 (
     CUSTOMER_ID     char (6), 
     user_name       varchar2 (25), 
@@ -62,7 +62,7 @@ create table customer_Profile
 /*
     Table: Payment_info
     Desc: Holds user's card info and email for billing info to be sent to.
-    References: Customer_Profile.
+    References: customer_profile.
 */
 
 create table payment_info
@@ -79,7 +79,7 @@ create table payment_info
 
 
 /*
-    Table: Address
+    Table: addy
     Desc: Stores user's address info. 
 */
 
@@ -128,7 +128,7 @@ create table billing
 /*
     Table: Order
     Desc: Tracks order's status and order date. 
-    References: Customer_Profile.
+    References: customer_profile.
 */
 
 create table orders
