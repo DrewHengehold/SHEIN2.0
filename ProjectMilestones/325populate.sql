@@ -14,6 +14,50 @@ start 325design.sql
 
 spool 325pop-out.txt
 
+
+delete *
+from new_user;
+
+delete * 
+from customer_profile;
+
+delete *
+from payment_info;
+
+delete *
+from addy;
+
+delete * 
+from billing;
+
+delete from shipping;
+
+delete * 
+from orders;
+
+delete *
+from shipping;
+
+delete *
+from shipment;
+
+delete *
+from catalog_items;
+
+delete *
+from bottoms;
+
+delete *
+from tops;
+
+delete * 
+from shoes;
+
+delete *
+from line_items;
+
+
+
 /*
     new_user - Drew
 */
