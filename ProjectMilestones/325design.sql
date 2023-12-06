@@ -17,12 +17,12 @@
 drop table new_user             cascade constraints;
 drop table customer_Profile     cascade constraints;
 drop table line_items           cascade constraints;
-drop table orders                cascade constraints;
+drop table orders               cascade constraints;
 drop table payment_info         cascade constraints;
 drop table shipment             cascade constraints;
 drop table shipping             cascade constraints;
 drop table billing              cascade constraints;
-drop table addy              cascade constraints;
+drop table addy                 cascade constraints;
 drop table catalog_items        cascade constraints;
 drop table bottoms              cascade constraints;
 drop table tops                 cascade constraints;

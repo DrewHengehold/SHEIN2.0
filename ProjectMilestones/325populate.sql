@@ -11,46 +11,47 @@
 */
 
 
-delete *
-from new_user;
+DELETE *
+FROM new_user;
 
-delete * 
-from customer_profile;
+DELETE * 
+FROM customer_profile;
 
-delete *
-from payment_info;
+DELETE *
+FROM payment_info;
 
-delete *
-from addy;
+DELETE *
+FROM addy;
 
-delete * 
-from billing;
+DELETE * 
+FROM billing;
 
-delete from shipping;
+DELETE *
+FROM shipping;
 
-delete * 
-from orders;
+DELETE * 
+FROM orders;
 
-delete *
-from shipping;
+DELETE *
+FROM shipping;
 
-delete *
-from shipment;
+DELETE *
+FROM shipment;
 
-delete *
-from catalog_items;
+DELETE *
+FROM catalog_items;
 
-delete *
-from bottoms;
+DELETE *
+FROM bottoms;
 
-delete *
-from tops;
+DELETE *
+FROM tops;
 
-delete * 
-from shoes;
+DELETE * 
+FROM shoes;
 
-delete *
-from line_items;
+DELETE *
+FROM line_items;
 
 
 /*
