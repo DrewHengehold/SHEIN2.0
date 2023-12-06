@@ -231,7 +231,7 @@ Create table shoes
 create table line_items
 (
     ORDER_ID        char (6),
-    SKU             char (8),
+    SKU             char (6),
     quantity        integer,
     price           integer,
     primary key     (ORDER_ID, SKU),
