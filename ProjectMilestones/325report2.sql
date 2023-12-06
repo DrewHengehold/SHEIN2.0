@@ -5,6 +5,6 @@ CS 325 - Fall 2023
 December 5, 2023
 */
 
-spool report1-results.txt
+spool report2-results.txt
 
 spool off

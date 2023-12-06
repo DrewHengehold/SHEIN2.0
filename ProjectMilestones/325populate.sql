@@ -2,17 +2,57 @@
 
     Drew Hengehold, Cosette Basto, Jacqueline Lyons, Shyna Kumar, Forrest Reid, Soran Vardanega
     CS 325 - Fall 2023
-    LAST MODIFIED DATE: 30-Nov-2023
+    LAST MODIFIED DATE: 5-DEC-2023
 
     ---------------------------
-    PROJECT DESIGN MILESTONE #3
+    PROJECT POPUlATE MILESTONE #3
     ---------------------------
 
 */
 
-start 325design.sql
 
-spool 325pop-out.txt
+DELETE *
+FROM new_user;
+
+DELETE * 
+FROM customer_profile;
+
+DELETE *
+FROM payment_info;
+
+DELETE *
+FROM addy;
+
+DELETE * 
+FROM billing;
+
+DELETE *
+FROM shipping;
+
+DELETE * 
+FROM orders;
+
+DELETE *
+FROM shipping;
+
+DELETE *
+FROM shipment;
+
+DELETE *
+FROM catalog_items;
+
+DELETE *
+FROM bottoms;
+
+DELETE *
+FROM tops;
+
+DELETE * 
+FROM shoes;
+
+DELETE *
+FROM line_items;
+
 
 
 delete *
@@ -62,13 +102,13 @@ from line_items;
     new_user - Drew
 */
 INSERT INTO new_user
-VALUES('forrest_reid', 'ForestIsTheBest', 'ADMIN');
+VALUES('forrest_reid', 'ForrestIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
 VALUES('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
-VALUES('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
+VALUES('cosette_basto', 'CosetteIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
 VALUES('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
@@ -107,10 +147,10 @@ INSERT INTO new_user
 VALUES('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
-    forrest - INSERT INTO customer profiles
+    forrest - customer_profiles
 
-    Customer_Profil
-    foreign key (user_name) refrences User
+    customer_profiles
+    foreign key (user_name) refrences new_user
 */
 INSERT INTO customer_profile
 VALUES ('C00001', 'john_doe', 'John', 'Doe', '1234567890', 'john.doe@email.com');
@@ -158,7 +198,7 @@ INSERT INTO customer_profile
 VALUES ('C00015', 'forrest_reid', 'Forrest', 'Reid', '4443332222', 'forrest.reid@email.com');
 
 /*
- Jacky creation - Payment info Insert statements 
+ Jacky - Payment info
 
  payment_info
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
@@ -371,6 +411,7 @@ Order - Soran
 Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
     foreign key (customer_id) refrences Customer_Profile
 */
+Prompt Orders Start
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
 VALUES('a12345', 'C00001',  35, 'PENDING', '01-Jan-2023');
@@ -417,6 +458,7 @@ VALUES('n12345', 'C00014', 22, 'SHIPPED', '11-Nov-2023');
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
 VALUES('o12345','C00015', 23, 'PENDING', '05-May-2023');
 
+Prompt Order Start
 /*
 Shipment - Drew
 
@@ -481,6 +523,7 @@ VALUES ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
 */
 
 --Bottoms
+Prompt Catalog Start
 
 INSERT INTO catalog_Items
 VALUES('SKU001', 'Pants', 'Comfortable pants for women', 29.99, 20, 'W', 'Blue');
@@ -517,6 +560,8 @@ VALUES('SKU011', 'Sweatpants', 'Basic slant pocket drawstring sweatpants for men
 
 INSERT INTO catalog_Items
 VALUES('SKU012', 'Straight leg jeans', 'Cotton ripped straight leg jeans for men', 32.99, 30, 'M', 'Light blue');
+
+Prompt Catalog End
 
 --Tops
 
@@ -739,5 +784,3 @@ VALUES('n12345', 'SKU014', 4, 110);
 
 INSERT INTO line_items
 VALUES('o12345', 'SKU015', 9, 700);
-
-spool off
