@@ -1,0 +1,611 @@
+
+USER_NAME                 PASSWORD                  USER_TYP                    
+------------------------- ------------------------- --------                    
+forrest_reid              ForestIsTheBest           ADMIN                       
+drew_hengehold            DrewIsTheBest             ADMIN                       
+cosette_basto             CossetteIsTheBest         ADMIN                       
+shyna_kumar               ShynaIsTheBest            ADMIN                       
+jacky_lyons               JackyIsTheBest            ADMIN                       
+soran_vardanega           SoranIsTheBest            ADMIN                       
+john_doe                  ZionNational              CUSTOMER                    
+jane_smith                ILoveCats                 CUSTOMER                    
+bob_jones                 ILoveDogs                 CUSTOMER                    
+michael_brown             BrownBerkely              CUSTOMER                    
+william_black             BlackChicago              CUSTOMER                    
+
+USER_NAME                 PASSWORD                  USER_TYP                    
+------------------------- ------------------------- --------                    
+lisa_jackson              JacksonNYC                CUSTOMER                    
+ryan_taylor               Taylor13#                 CUSTOMER                    
+susan_white               WhiteTheColor             CUSTOMER                    
+emily_green               GreenTheApple             CUSTOMER                    
+
+15 rows selected.
+
+
+CUSTOM USER_NAME                 FNAME                                          
+------ ------------------------- -------------------------                      
+LNAME                     PHONE      EMAIL                                      
+------------------------- ---------- -------------------------                  
+C00001 john_doe                  John                                           
+Doe                       1234567890 john.doe@email.com                         
+                                                                                
+C00002 jane_smith                Jane                                           
+Smith                     9876543210 jane.smith@email.com                       
+                                                                                
+C00003 bob_jones                 Bob                                            
+Jones                     5556667777 bob.jones@email.com                        
+                                                                                
+
+CUSTOM USER_NAME                 FNAME                                          
+------ ------------------------- -------------------------                      
+LNAME                     PHONE      EMAIL                                      
+------------------------- ---------- -------------------------                  
+C00004 susan_white               Susan                                          
+White                     1112223333 susan.white@email.com                      
+                                                                                
+C00005 michael_brown             Michael                                        
+Brown                     9998887777 michael.brown@email.com                    
+                                                                                
+C00006 emily_green               Emily                                          
+Green                     4445556666 emily.green@email.com                      
+                                                                                
+
+CUSTOM USER_NAME                 FNAME                                          
+------ ------------------------- -------------------------                      
+LNAME                     PHONE      EMAIL                                      
+------------------------- ---------- -------------------------                  
+C00007 william_black             William                                        
+Black                     7778889999 william.black@email.com                    
+                                                                                
+C00008 lisa_jackson              Lisa                                           
+Jackson                   3332221111 lisa.jackson@email.com                     
+                                                                                
+C00009 ryan_taylor               Ryan                                           
+Taylor                    5554443333 ryan.taylor@email.com                      
+                                                                                
+
+CUSTOM USER_NAME                 FNAME                                          
+------ ------------------------- -------------------------                      
+LNAME                     PHONE      EMAIL                                      
+------------------------- ---------- -------------------------                  
+C00010 soran_vardanega           Soran                                          
+Vardanega                 6667778888 soran.vardanega@email.com                  
+                                                                                
+C00011 shyna_kumar               Shyna                                          
+Kumar                     9990001111 shyna.kumar@email.com                      
+                                                                                
+C00012 jacky_lyons               Jacky                                          
+Lyons                     1110002222 jacky.lyons@email.com                      
+                                                                                
+
+CUSTOM USER_NAME                 FNAME                                          
+------ ------------------------- -------------------------                      
+LNAME                     PHONE      EMAIL                                      
+------------------------- ---------- -------------------------                  
+C00013 drew_hengehold            Drew                                           
+Hengehold                 8887776666 drew.hengehold@email.com                   
+                                                                                
+C00014 cosette_basto             Cosette                                        
+Basto                     2223334444 cosette.basto@email.com                    
+                                                                                
+C00015 forrest_reid              Forrest                                        
+Reid                      4443332222 forrest.reid@email.com                     
+                                                                                
+
+15 rows selected.
+
+
+ORDER_ SKU        QUANTITY      PRICE                                           
+------ -------- ---------- ----------                                           
+a12345 SKU001            2         12                                           
+b12345 SKU002            6        300                                           
+c12345 SKU003            4        200                                           
+d12345 SKU004            7        400                                           
+e12345 SKU005            2         90                                           
+f12345 SKU006            1         12                                           
+g12345 SKU007            5        100                                           
+h12345 SKU008            9        500                                           
+i12345 SKU009            3        130                                           
+j12345 SKU010            8        600                                           
+k12345 SKU011            2        124                                           
+
+ORDER_ SKU        QUANTITY      PRICE                                           
+------ -------- ---------- ----------                                           
+l12345 SKU012            7        356                                           
+m12345 SKU013            9        127                                           
+n12345 SKU014            4        110                                           
+o12345 SKU015            9        700                                           
+
+15 rows selected.
+
+
+ORDER_ CUSTOM ORDER_TOTAL ORDER_ST DATE_ORDE                                    
+------ ------ ----------- -------- ---------                                    
+a12345 C00001          35 PENDING  01-JAN-23                                    
+b12345 C00002          40 SHIPPED  03-MAR-23                                    
+c12345 C00003          23 INVOICED 08-AUG-23                                    
+d12345 C00004          20 RETURNED 10-OCT-23                                    
+e12345 C00005          32 INVOICED 01-JAN-23                                    
+f12345 C00006          48 RETURNED 04-APR-23                                    
+g12345 C00007          50 SHIPPED  12-DEC-23                                    
+h12345 C00008          37 PENDING  01-JAN-23                                    
+i12345 C00009          24 INVOICED 09-SEP-23                                    
+j12345 C00010          43 PENDING  01-JAN-23                                    
+k12345 C00011          27 SHIPPED  07-JUL-23                                    
+
+ORDER_ CUSTOM ORDER_TOTAL ORDER_ST DATE_ORDE                                    
+------ ------ ----------- -------- ---------                                    
+l12345 C00012          55 INVOICED 02-FEB-23                                    
+m12345 C00013          58 PENDING  06-JUN-23                                    
+n12345 C00014          22 SHIPPED  11-NOV-23                                    
+o12345 C00015          23 PENDING  05-MAY-23                                    
+
+15 rows selected.
+
+
+CARD_NUM         CUSTOM NAME_ON_CARD              EXP_DATE                      
+---------------- ------ ------------------------- -------------------------     
+BILLING_EMAIL                                                                   
+-------------------------                                                       
+1234567890123456 C00001 John Doe                  12/25                         
+john@example.com                                                                
+                                                                                
+9876543210987654 C00002 Jane Smith                09/24                         
+jane@example.com                                                                
+                                                                                
+5678901234567890 C00003 Alice Johnson             03/23                         
+alice@example.com                                                               
+                                                                                
+
+CARD_NUM         CUSTOM NAME_ON_CARD              EXP_DATE                      
+---------------- ------ ------------------------- -------------------------     
+BILLING_EMAIL                                                                   
+-------------------------                                                       
+1122334455667788 C00004 Michael Brown             07/23                         
+michael@example.com                                                             
+                                                                                
+9988776655443322 C00005 Sarah Johnson             10/25                         
+sarah@example.com                                                               
+                                                                                
+1212121212121212 C00006 Emily Davis               05/24                         
+emily@example.com                                                               
+                                                                                
+
+CARD_NUM         CUSTOM NAME_ON_CARD              EXP_DATE                      
+---------------- ------ ------------------------- -------------------------     
+BILLING_EMAIL                                                                   
+-------------------------                                                       
+4545454545454545 C00007 David Wilson              11/23                         
+david@example.com                                                               
+                                                                                
+7878787878787878 C00008 Sophia Garcia             08/24                         
+sophia@example.com                                                              
+                                                                                
+3232323232323232 C00009 Matthew Martinez          02/23                         
+matthew@example.com                                                             
+                                                                                
+
+CARD_NUM         CUSTOM NAME_ON_CARD              EXP_DATE                      
+---------------- ------ ------------------------- -------------------------     
+BILLING_EMAIL                                                                   
+-------------------------                                                       
+6666666666666666 C00010 Olivia Lopez              06/25                         
+olivia@example.com                                                              
+                                                                                
+9999999999999999 C00011 Ethan Adams               09/23                         
+ethan@example.com                                                               
+                                                                                
+8888888888888888 C00012 Ava Hernandez             12/24                         
+ava@example.com                                                                 
+                                                                                
+
+CARD_NUM         CUSTOM NAME_ON_CARD              EXP_DATE                      
+---------------- ------ ------------------------- -------------------------     
+BILLING_EMAIL                                                                   
+-------------------------                                                       
+1010101010101010 C00013 Noah Taylor               04/23                         
+noah@example.com                                                                
+                                                                                
+7777777777777777 C00014 Isabella Nguyen           01/25                         
+isabella@example.com                                                            
+                                                                                
+
+14 rows selected.
+
+
+SHIPME ADDRES ORDER_ SHIP DELIVERY_                                             
+------ ------ ------ ---- ---------                                             
+sh0000 A00001 a12345 PICK                                                       
+sh0001 A00002 b12345 PICK                                                       
+sh0002 A00003 c12345 PICK                                                       
+sh0003 A00004 d12345 PICK                                                       
+sh0004 A00005 e12345 PACK                                                       
+sh0005 A00006 f12345 PACK                                                       
+sh0006 A00007 g12345 PACK                                                       
+sh0007 A00008 h12345 PACK                                                       
+sh0008 A00009 i12345 SHIP 02-DEC-23                                             
+sh0009 A00010 j12345 SHIP 03-DEC-23                                             
+sh0010 A00011 k12345 SHIP 04-DEC-23                                             
+
+SHIPME ADDRES ORDER_ SHIP DELIVERY_                                             
+------ ------ ------ ---- ---------                                             
+sh0011 A00012 l12345 SHIP 05-DEC-23                                             
+sh0012 A00013 m12345 SHIP 06-DEC-23                                             
+sh0013 A00014 n12345 SHIP 07-DEC-23                                             
+sh0014 A00015 o12345 SHIP 08-DEC-23                                             
+
+15 rows selected.
+
+
+ADDRES SHIP_INSTRUCTIONS                                                        
+------ ---------------------------------------------                            
+A00001 N/A                                                                      
+A00002 Leave at door                                                            
+A00003 Leave at gate                                                            
+A00004 N/A                                                                      
+A00005 Leave by mailbox                                                         
+A00006 Leave at door                                                            
+A00007 Leave on stair                                                           
+A00008 N/A                                                                      
+A00009 N/A                                                                      
+A00010 Leave by fence                                                           
+A00011 Leave on stair                                                           
+
+ADDRES SHIP_INSTRUCTIONS                                                        
+------ ---------------------------------------------                            
+A00012 Leave at door                                                            
+A00013 N/A                                                                      
+A00014 Leave on stair                                                           
+A00015 Leave by fence                                                           
+
+15 rows selected.
+
+
+ADDRES CARD_NUM                                                                 
+------ ----------------                                                         
+A00001 1234567890123456                                                         
+A00002 9876543210987654                                                         
+A00003 5678901234567890                                                         
+A00004 1122334455667788                                                         
+A00005 9988776655443322                                                         
+A00006 1212121212121212                                                         
+A00007 4545454545454545                                                         
+A00008 7878787878787878                                                         
+A00009 3232323232323232                                                         
+A00010 6666666666666666                                                         
+A00011 9999999999999999                                                         
+
+ADDRES CARD_NUM                                                                 
+------ ----------------                                                         
+A00012 8888888888888888                                                         
+A00013 1010101010101010                                                         
+A00014 7777777777777777                                                         
+A00015 7878787878787878                                                         
+
+15 rows selected.
+
+
+ADDRES CUSTOM STREET                    CITY                      US ZIP        
+------ ------ ------------------------- ------------------------- -- -----      
+A00001 C00001 123 Main St               Anytown                   CA 12345      
+A00002 C00002 456 Oak Ave               Somewhereville            NY 54321      
+A00003 C00003 789 Elm Blvd              Nowhere City              TX 67890      
+A00004 C00004 101 Pine Ln               Smalltown                 FL 13579      
+A00005 C00005 202 Maple Dr              Big City                  IL 24680      
+A00006 C00006 303 Birch St              Anywhere                  AZ 98765      
+A00007 C00007 404 Cedar Ave             Everytown                 WA 11223      
+A00008 C00008 505 Redwood Rd            Middleofnowhere           GA 33445      
+A00009 C00009 606 Spruce Blvd           Hometown                  MI 55667      
+A00010 C00010 707 Cedar Ln              Downtown                  OR 77889      
+A00011 C00011 808 Pine Dr               Uptown                    NC 99001      
+
+ADDRES CUSTOM STREET                    CITY                      US ZIP        
+------ ------ ------------------------- ------------------------- -- -----      
+A00012 C00012 909 Elm St                Suburbia                  SC 11234      
+A00013 C00013 121 Oak Blvd              Countryside               PA 22345      
+A00014 C00014 232 Pine Dr               Metropolis                NJ 33456      
+A00015 C00015 343 Maple Ln              Village                   UT 44567      
+
+15 rows selected.
+
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+SKU001   Pants                                                                  
+Comfortable pants for women                               29.99             20 W
+Blue                                                                            
+                                                                                
+SKU002   Leggings                                                               
+Stylish leggings for women                                25.99             20 W
+Black                                                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+                                                                                
+SKU003   Jeans                                                                  
+Casual jeans for women                                    39.99             30 W
+White                                                                           
+                                                                                
+SKU004   Shorts                                                                 
+Atheletic shorts for women                                22.99             30 W
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Gray                                                                            
+                                                                                
+SKU005   High-waisted jeans                                                     
+High-waisted jeans for women                              27.99             30 W
+Black                                                                           
+                                                                                
+SKU006   Sweatpants                                                             
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Solid Slant pocket Sweatpants for women                   15.99             30 W
+Brown                                                                           
+                                                                                
+SKU007   Pants                                                                  
+Classic regular fit pants for men                         34.99             30 M
+Black                                                                           
+                                                                                
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+SKU008   Shorts                                                                 
+Cargo shorts for men                                      24.99             30 M
+Khaki                                                                           
+                                                                                
+SKU009   Joggers                                                                
+Casual joggers for men                                    29.99             30 M
+Navy                                                                            
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+                                                                                
+SKU010   Cargo pants                                                            
+Flap pocket side drawstring waist for men                 37.99             30 M
+Gray                                                                            
+                                                                                
+SKU011   Sweatpants                                                             
+Basic slant pocket drawstring sweatpants for men          16.99             30 M
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Red                                                                             
+                                                                                
+SKU012   Straight leg jeans                                                     
+Cotton ripped straight leg jeans for men                  32.99             30 M
+Light blue                                                                      
+                                                                                
+SKU013   Women T-shirt                                                          
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Causual cotton t-shirt for women                           7.99             25 W
+Pink                                                                            
+                                                                                
+SKU014   Sweater                                                                
+Women knitted winter sweater                              25.99             20 W
+Floral                                                                          
+                                                                                
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+SKU015   Blouse                                                                 
+Formal white blouse for women                             22.99             20 W
+White                                                                           
+                                                                                
+SKU016   Tank-Tops                                                              
+Solid Tank Tops for women                                  5.99             25 W
+Orange                                                                          
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+                                                                                
+SKU017   High-Neck Sweater                                                      
+Women turtleneck drop shoulder waffle knit sweater        32.99             25 W
+Yellow                                                                          
+                                                                                
+SKU018   Men T-shirts                                                           
+Basic casual cotton t-shirt for men                        5.99             25 M
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Red                                                                             
+                                                                                
+SKU019   Men shirt                                                              
+Plaid print flap pocket shirt for men                     19.99             25 M
+Multicolor                                                                      
+                                                                                
+SKU020   Hoodie                                                                 
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Sporty hoodie for men                                     22.99             35 M
+Apricot                                                                         
+                                                                                
+SKU021   Sweatshirt                                                             
+Coloblock letter patched detail sweatshirt for men        25.99             35 M
+Blue                                                                            
+                                                                                
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+SKU022   Men zip-up sweatshirt                                                  
+Solid zip up funnel neck sweatshirt                       27.99             20 M
+Dark grey                                                                       
+                                                                                
+SKU023   Sandals                                                                
+Summer elastic slingback wedge sandals                    25.99             20 W
+White                                                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+                                                                                
+SKU024   Women sneakers                                                         
+Casual lace-up womens sneakers                            39.99             20 W
+Red                                                                             
+                                                                                
+SKU025   Sports shoes                                                           
+Women running shoes with synthetic leather                33.99             20 W
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Multicolor                                                                      
+                                                                                
+SKU026   Women wedge sneakers                                                   
+Womens platform sneakers with wedge heels                 25.99             20 W
+Beige                                                                           
+                                                                                
+SKU027   Men sneakers                                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+Men fashionable lightweight colorblock sneakers           39.99             20 M
+Green                                                                           
+                                                                                
+SKU028   Boots                                                                  
+Men high top work boots with steel toe cap                45.99             20 M
+Black                                                                           
+                                                                                
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+SKU029   Loafers                                                                
+Mens fashionable and comfortable loafers                  25.99             20 M
+Bronze                                                                          
+                                                                                
+SKU030   Dress shoes                                                            
+Mens business wingtip shoes                               32.99             20 M
+Brown                                                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR                                                                      
+----------                                                                      
+                                                                                
+
+30 rows selected.
+
+
+SKU      WAIST_SIZE MATERIAL                                                    
+-------- ---------- ---------------                                             
+SKU001           26 Cotton                                                      
+SKU002           27 Spandex                                                     
+SKU003           30 Denim                                                       
+SKU004           31 Polyster                                                    
+SKU005           30 Cotton                                                      
+SKU006           31 Polyster                                                    
+SKU007           28 Polyster                                                    
+SKU008           27 Spandex                                                     
+SKU009           26 Spandex                                                     
+SKU010           29 Polyster                                                    
+SKU011           30 Cotton                                                      
+
+SKU      WAIST_SIZE MATERIAL                                                    
+-------- ---------- ---------------                                             
+SKU012           31 Cotton                                                      
+
+12 rows selected.
+
+
+SKU      T SLEEV NECKLINE_T                                                     
+-------- - ----- ----------                                                     
+SKU013   S Short Round                                                          
+SKU014   M Long  Round-Neck                                                     
+SKU015   L Long  V-Neck                                                         
+SKU016   S Short High-Neck                                                      
+SKU017   M Long  High-Neck                                                      
+SKU018   L Short Round-Neck                                                     
+SKU019   M Long  Collar                                                         
+SKU020   M Long  Hooded                                                         
+SKU021   S Long  Crew-Neck                                                      
+SKU022   L Long  Round                                                          
+
+10 rows selected.
+
+
+SKU       SHOE_SIZE SHOE_TYPE                                                   
+-------- ---------- ---------------                                             
+SKU023            7 Sandals                                                     
+SKU024            8 Sneaker                                                     
+SKU025           11 Sports                                                      
+SKU026            9 Wedge sneaker                                               
+SKU027            8 Sneaker                                                     
+SKU028           10 Boots                                                       
+SKU029            9 Loafers                                                     
+SKU030            8 Dress shoes                                                 
+
+8 rows selected.
+
