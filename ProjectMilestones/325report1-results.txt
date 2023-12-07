@@ -1,0 +1,574 @@
+
+Wed Dec 06                                                             page    1
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Blouse   Jackson, Lisa            700                                           
+         Reid, Forrest            700                                           
+         Vardanega, Soran         700                                           
+         Kumar, Shyna             700                                           
+         Lyons, Jacky             700                                           
+         Hengehold, Drew          700                                           
+         Basto, Cosette           700                                           
+         Black, William           700                                           
+
+Wed Dec 06                                                             page    2
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Blouse   Green, Emily             700                                           
+         Brown, Michael           700                                           
+         White, Susan             700                                           
+         Jones, Bob               700                                           
+         Smith, Jane              700                                           
+         Doe, John                700                                           
+         Taylor, Ryan             700                                           
+********                      -------                                           
+
+Wed Dec 06                                                             page    3
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Total Pr                       10,500                                           
+                                                                                
+Cargo pa Black, William           600                                           
+nts                                                                             
+                                                                                
+         Green, Emily             600                                           
+         Brown, Michael           600                                           
+         White, Susan             600                                           
+
+Wed Dec 06                                                             page    4
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Cargo pa Jones, Bob               600                                           
+nts                                                                             
+                                                                                
+         Smith, Jane              600                                           
+         Doe, John                600                                           
+         Jackson, Lisa            600                                           
+         Reid, Forrest            600                                           
+         Basto, Cosette           600                                           
+
+Wed Dec 06                                                             page    5
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Cargo pa Hengehold, Drew          600                                           
+nts                                                                             
+                                                                                
+         Lyons, Jacky             600                                           
+         Kumar, Shyna             600                                           
+         Vardanega, Soran         600                                           
+         Taylor, Ryan             600                                           
+********                      -------                                           
+
+Wed Dec 06                                                             page    6
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Total Pr                        9,000                                           
+                                                                                
+Shorts   Basto, Cosette           500                                           
+         Reid, Forrest            500                                           
+         Lyons, Jacky             500                                           
+         Kumar, Shyna             500                                           
+         Vardanega, Soran         500                                           
+         Taylor, Ryan             500                                           
+
+Wed Dec 06                                                             page    7
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Shorts   Jackson, Lisa            500                                           
+         Doe, John                500                                           
+         Smith, Jane              500                                           
+         Jones, Bob               500                                           
+         White, Susan             500                                           
+         Brown, Michael           500                                           
+         Green, Emily             500                                           
+         Black, William           500                                           
+
+Wed Dec 06                                                             page    8
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Shorts   Hengehold, Drew          500                                           
+         Doe, John                400                                           
+         Smith, Jane              400                                           
+         Jones, Bob               400                                           
+         White, Susan             400                                           
+         Brown, Michael           400                                           
+         Green, Emily             400                                           
+         Black, William           400                                           
+
+Wed Dec 06                                                             page    9
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Shorts   Jackson, Lisa            400                                           
+         Taylor, Ryan             400                                           
+         Vardanega, Soran         400                                           
+         Kumar, Shyna             400                                           
+         Lyons, Jacky             400                                           
+         Hengehold, Drew          400                                           
+         Basto, Cosette           400                                           
+         Reid, Forrest            400                                           
+
+Wed Dec 06                                                             page   10
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+********                      -------                                           
+Total Pr                       13,500                                           
+                                                                                
+Straight Doe, John                356                                           
+ leg jea                                                                        
+ns                                                                              
+                                                                                
+         Smith, Jane              356                                           
+
+Wed Dec 06                                                             page   11
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Straight Reid, Forrest            356                                           
+ leg jea                                                                        
+ns                                                                              
+                                                                                
+         Basto, Cosette           356                                           
+         Hengehold, Drew          356                                           
+         Lyons, Jacky             356                                           
+         Kumar, Shyna             356                                           
+
+Wed Dec 06                                                             page   12
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Straight Vardanega, Soran         356                                           
+ leg jea                                                                        
+ns                                                                              
+                                                                                
+         Taylor, Ryan             356                                           
+         Jackson, Lisa            356                                           
+         Black, William           356                                           
+         Green, Emily             356                                           
+
+Wed Dec 06                                                             page   13
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Straight Brown, Michael           356                                           
+ leg jea                                                                        
+ns                                                                              
+                                                                                
+         White, Susan             356                                           
+         Jones, Bob               356                                           
+********                      -------                                           
+Total Pr                        5,340                                           
+
+Wed Dec 06                                                             page   14
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+                                                                                
+Leggings Doe, John                300                                           
+         Reid, Forrest            300                                           
+         Hengehold, Drew          300                                           
+         Lyons, Jacky             300                                           
+         Kumar, Shyna             300                                           
+         Vardanega, Soran         300                                           
+         Taylor, Ryan             300                                           
+
+Wed Dec 06                                                             page   15
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Leggings Jackson, Lisa            300                                           
+         Black, William           300                                           
+         Green, Emily             300                                           
+         Brown, Michael           300                                           
+         White, Susan             300                                           
+         Jones, Bob               300                                           
+         Smith, Jane              300                                           
+         Basto, Cosette           300                                           
+
+Wed Dec 06                                                             page   16
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+********                      -------                                           
+Total Pr                        4,500                                           
+                                                                                
+Jeans    Doe, John                200                                           
+         Reid, Forrest            200                                           
+         Jones, Bob               200                                           
+         White, Susan             200                                           
+         Brown, Michael           200                                           
+
+Wed Dec 06                                                             page   17
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Jeans    Green, Emily             200                                           
+         Black, William           200                                           
+         Jackson, Lisa            200                                           
+         Taylor, Ryan             200                                           
+         Vardanega, Soran         200                                           
+         Kumar, Shyna             200                                           
+         Lyons, Jacky             200                                           
+         Hengehold, Drew          200                                           
+
+Wed Dec 06                                                             page   18
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Jeans    Basto, Cosette           200                                           
+         Smith, Jane              200                                           
+********                      -------                                           
+Total Pr                        3,000                                           
+                                                                                
+Joggers  Basto, Cosette           130                                           
+         Reid, Forrest            130                                           
+         Lyons, Jacky             130                                           
+
+Wed Dec 06                                                             page   19
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Joggers  Kumar, Shyna             130                                           
+         Vardanega, Soran         130                                           
+         Taylor, Ryan             130                                           
+         Jackson, Lisa            130                                           
+         Black, William           130                                           
+         Green, Emily             130                                           
+         Brown, Michael           130                                           
+         White, Susan             130                                           
+
+Wed Dec 06                                                             page   20
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Joggers  Jones, Bob               130                                           
+         Smith, Jane              130                                           
+         Doe, John                130                                           
+         Hengehold, Drew          130                                           
+********                      -------                                           
+Total Pr                        1,950                                           
+                                                                                
+Women T- Reid, Forrest            127                                           
+
+Wed Dec 06                                                             page   21
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+shirt                                                                           
+                                                                                
+Women T- Basto, Cosette           127                                           
+shirt                                                                           
+                                                                                
+         Hengehold, Drew          127                                           
+         Lyons, Jacky             127                                           
+         Kumar, Shyna             127                                           
+
+Wed Dec 06                                                             page   22
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Women T- Vardanega, Soran         127                                           
+shirt                                                                           
+                                                                                
+         Taylor, Ryan             127                                           
+         Jackson, Lisa            127                                           
+         Black, William           127                                           
+         Green, Emily             127                                           
+         Brown, Michael           127                                           
+
+Wed Dec 06                                                             page   23
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Women T- White, Susan             127                                           
+shirt                                                                           
+                                                                                
+         Jones, Bob               127                                           
+         Doe, John                127                                           
+         Smith, Jane              127                                           
+********                      -------                                           
+Total Pr                        1,905                                           
+
+Wed Dec 06                                                             page   24
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+                                                                                
+Sweatpan Brown, Michael           124                                           
+ts                                                                              
+                                                                                
+         Green, Emily             124                                           
+         Black, William           124                                           
+         Jackson, Lisa            124                                           
+         Taylor, Ryan             124                                           
+
+Wed Dec 06                                                             page   25
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Sweatpan Vardanega, Soran         124                                           
+ts                                                                              
+                                                                                
+         Kumar, Shyna             124                                           
+         Lyons, Jacky             124                                           
+         Hengehold, Drew          124                                           
+         Basto, Cosette           124                                           
+         Reid, Forrest            124                                           
+
+Wed Dec 06                                                             page   26
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Sweatpan Doe, John                124                                           
+ts                                                                              
+                                                                                
+         Smith, Jane              124                                           
+         Jones, Bob               124                                           
+         White, Susan             124                                           
+********                      -------                                           
+Total Pr                        1,860                                           
+
+Wed Dec 06                                                             page   27
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+                                                                                
+Sweater  Doe, John                110                                           
+         Smith, Jane              110                                           
+         Reid, Forrest            110                                           
+         Basto, Cosette           110                                           
+         Hengehold, Drew          110                                           
+         Lyons, Jacky             110                                           
+         Kumar, Shyna             110                                           
+
+Wed Dec 06                                                             page   28
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Sweater  Vardanega, Soran         110                                           
+         Taylor, Ryan             110                                           
+         Jackson, Lisa            110                                           
+         Black, William           110                                           
+         Green, Emily             110                                           
+         Brown, Michael           110                                           
+         White, Susan             110                                           
+         Jones, Bob               110                                           
+
+Wed Dec 06                                                             page   29
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+********                      -------                                           
+Total Pr                        1,650                                           
+                                                                                
+Pants    Doe, John                100                                           
+         Reid, Forrest            100                                           
+         Hengehold, Drew          100                                           
+         Lyons, Jacky             100                                           
+         Kumar, Shyna             100                                           
+
+Wed Dec 06                                                             page   30
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Pants    Vardanega, Soran         100                                           
+         Taylor, Ryan             100                                           
+         Jackson, Lisa            100                                           
+         Black, William           100                                           
+         Green, Emily             100                                           
+         Brown, Michael           100                                           
+         White, Susan             100                                           
+         Jones, Bob               100                                           
+
+Wed Dec 06                                                             page   31
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Pants    Smith, Jane              100                                           
+         Basto, Cosette           100                                           
+********                      -------                                           
+Total Pr                        1,500                                           
+                                                                                
+High-wai Basto, Cosette            90                                           
+sted jea                                                                        
+ns                                                                              
+
+Wed Dec 06                                                             page   32
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+                                                                                
+High-wai Reid, Forrest             90                                           
+sted jea                                                                        
+ns                                                                              
+                                                                                
+         Lyons, Jacky              90                                           
+         Kumar, Shyna              90                                           
+         Vardanega, Soran          90                                           
+
+Wed Dec 06                                                             page   33
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+High-wai Taylor, Ryan              90                                           
+sted jea                                                                        
+ns                                                                              
+                                                                                
+         Jackson, Lisa             90                                           
+         Black, William            90                                           
+         Green, Emily              90                                           
+         Brown, Michael            90                                           
+
+Wed Dec 06                                                             page   34
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+High-wai White, Susan              90                                           
+sted jea                                                                        
+ns                                                                              
+                                                                                
+         Jones, Bob                90                                           
+         Smith, Jane               90                                           
+         Doe, John                 90                                           
+         Hengehold, Drew           90                                           
+
+Wed Dec 06                                                             page   35
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+********                      -------                                           
+Total Pr                        1,350                                           
+                                                                                
+Sweatpan Doe, John                 12                                           
+ts                                                                              
+                                                                                
+         Smith, Jane               12                                           
+         Jones, Bob                12                                           
+
+Wed Dec 06                                                             page   36
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Sweatpan White, Susan              12                                           
+ts                                                                              
+                                                                                
+         Brown, Michael            12                                           
+         Green, Emily              12                                           
+         Black, William            12                                           
+         Jackson, Lisa             12                                           
+         Taylor, Ryan              12                                           
+
+Wed Dec 06                                                             page   37
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Sweatpan Vardanega, Soran          12                                           
+ts                                                                              
+                                                                                
+         Kumar, Shyna              12                                           
+         Lyons, Jacky              12                                           
+         Hengehold, Drew           12                                           
+         Basto, Cosette            12                                           
+********                      -------                                           
+
+Wed Dec 06                                                             page   38
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Total Pr                          168                                           
+                                                                                
+Pants    Reid, Forrest             12                                           
+         Basto, Cosette            12                                           
+         Hengehold, Drew           12                                           
+         Lyons, Jacky              12                                           
+         Kumar, Shyna              12                                           
+         Vardanega, Soran          12                                           
+
+Wed Dec 06                                                             page   39
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Pants    Taylor, Ryan              12                                           
+         Jackson, Lisa             12                                           
+         Black, William            12                                           
+         Green, Emily              12                                           
+         Brown, Michael            12                                           
+         White, Susan              12                                           
+         Jones, Bob                12                                           
+********                      -------                                           
+
+Wed Dec 06                                                             page   40
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Total Pr                          156                                           
+                                                                                
+Sweatpan Reid, Forrest             12                                           
+ts                                                                              
+                                                                                
+********                      -------                                           
+Total Pr                           12                                           
+                                                                                
+
+Wed Dec 06                                                             page   41
+                               Total Gross Value
+
+Item Nam Name                   Price                                           
+-------- -------------------- -------                                           
+Pants    Doe, John                 12                                           
+         Smith, Jane               12                                           
+********                      -------                                           
+Total Pr                           24                                           
+                                                                                
+
+225 rows selected.
+
