@@ -367,7 +367,7 @@ Order - Soran
 Order(ORDER_ID, customer_id, order_total, order_states, date_ordered)
     foreign key (customer_id) refrences Customer_Profile
 */
-Prompt Orders Start
+
 
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
 VALUES('a12345', 'C00001',  35, 'PENDING', '01-Jan-2023');
@@ -414,7 +414,6 @@ VALUES('n12345', 'C00014', 22, 'SHIPPED', '11-Nov-2023');
 INSERT INTO orders(ORDER_ID, customer_id, order_total, order_states, date_ordered)
 VALUES('o12345','C00015', 23, 'PENDING', '05-May-2023');
 
-Prompt Order Start
 /*
 Shipment - Drew
 
@@ -479,7 +478,6 @@ VALUES ('sh0014','A00015' ,'o12345', 'SHIP','08-Dec-2023');
 */
 
 --Bottoms
-Prompt Catalog Start
 
 INSERT INTO catalog_Items
 VALUES('SKU001', 'Pants', 'Comfortable pants for women', 29.99, 20, 'W', 'Blue');
@@ -516,8 +514,6 @@ VALUES('SKU011', 'Sweatpants', 'Basic slant pocket drawstring sweatpants for men
 
 INSERT INTO catalog_Items
 VALUES('SKU012', 'Straight leg jeans', 'Cotton ripped straight leg jeans for men', 32.99, 30, 'M', 'Light blue');
-
-Prompt Catalog End
 
 --Tops
 
