@@ -84,12 +84,14 @@ Sweatpants                       16.99
 Straight leg jeans               32.99                                          
 
 === Query 3 ===
-Display customer Id, last name of all shiped products
-select cust_id,lname, order_states
-       *
-ERROR at line 1:
-ORA-00904: "CUST_ID": invalid identifier 
+Display customer id and date ordered of items shiped
 
+CUSTOM DATE_ORDE                                                                
+------ ---------                                                                
+C00002 03-MAR-23                                                                
+C00007 12-DEC-23                                                                
+C00011 07-JUL-23                                                                
+C00014 11-NOV-23                                                                
 
 === Query 4 ===
 Display tops that cost less than the average price of all tops
@@ -259,3 +261,4 @@ Hengehold                 noah@example.com
 Basto                     isabella@example.com                                  
 
 14 rows selected.
+
