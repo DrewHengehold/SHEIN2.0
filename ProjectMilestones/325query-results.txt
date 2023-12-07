@@ -1,0 +1,261 @@
+=== Query 1 ===
+Display customer id, username, and full name
+
+Custom User Name                                                                
+------ -------------------------                                                
+Name                                                                            
+----------------------------------------------------                            
+C00001 john_doe                                                                 
+Doe, John                                                                       
+                                                                                
+C00002 jane_smith                                                               
+Smith, Jane                                                                     
+                                                                                
+C00003 bob_jones                                                                
+Jones, Bob                                                                      
+                                                                                
+
+Custom User Name                                                                
+------ -------------------------                                                
+Name                                                                            
+----------------------------------------------------                            
+C00004 susan_white                                                              
+White, Susan                                                                    
+                                                                                
+C00005 michael_brown                                                            
+Brown, Michael                                                                  
+                                                                                
+C00006 emily_green                                                              
+Green, Emily                                                                    
+                                                                                
+
+Custom User Name                                                                
+------ -------------------------                                                
+Name                                                                            
+----------------------------------------------------                            
+C00007 william_black                                                            
+Black, William                                                                  
+                                                                                
+C00008 lisa_jackson                                                             
+Jackson, Lisa                                                                   
+                                                                                
+C00009 ryan_taylor                                                              
+Taylor, Ryan                                                                    
+                                                                                
+
+Custom User Name                                                                
+------ -------------------------                                                
+Name                                                                            
+----------------------------------------------------                            
+C00010 soran_vardanega                                                          
+Vardanega, Soran                                                                
+                                                                                
+C00011 shyna_kumar                                                              
+Kumar, Shyna                                                                    
+                                                                                
+C00012 jacky_lyons                                                              
+Lyons, Jacky                                                                    
+                                                                                
+
+Custom User Name                                                                
+------ -------------------------                                                
+Name                                                                            
+----------------------------------------------------                            
+C00013 drew_hengehold                                                           
+Hengehold, Drew                                                                 
+                                                                                
+C00014 cosette_basto                                                            
+Basto, Cosette                                                                  
+                                                                                
+C00015 forrest_reid                                                             
+Reid, Forrest                                                                   
+                                                                                
+
+15 rows selected.
+
+=== Query 2 ===
+Display bottoms cost and description that are made of cotton
+
+ITEM_NAME                 LISTED_PRICE                                          
+------------------------- ------------                                          
+Pants                            29.99                                          
+High-waisted jeans               27.99                                          
+Sweatpants                       16.99                                          
+Straight leg jeans               32.99                                          
+
+=== Query 3 ===
+Display customer Id, last name of all shiped products
+select cust_id,lname, order_states
+       *
+ERROR at line 1:
+ORA-00904: "CUST_ID": invalid identifier 
+
+
+=== Query 4 ===
+Display tops that cost less than the average price of all tops
+
+ITEM_NAME                                                                       
+-------------------------                                                       
+Women T-shirt                                                                   
+Sweater                                                                         
+Blouse                                                                          
+Tank-Tops                                                                       
+Men T-shirts                                                                    
+Men shirt                                                                       
+Hoodie                                                                          
+Sweatshirt                                                                      
+
+8 rows selected.
+
+=== Query 5 ===
+Displays shoe types grouped by shoe sizes
+
+AVG(SHOE_SIZE) SHOE_TYPE                                                        
+-------------- ---------------                                                  
+             8 Dress shoes                                                      
+             8 Sneaker                                                          
+            10 Boots                                                            
+             9 Loafers                                                          
+             9 Wedge sneaker                                                    
+             7 Sandals                                                          
+            11 Sports                                                           
+
+7 rows selected.
+
+=== Query 6 ===
+Displays all details of each top
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+SKU013   Women T-shirt                                                          
+Causual cotton t-shirt for women                           7.99             25 W
+Pink       SKU013   S Short Round                                               
+                                                                                
+SKU014   Sweater                                                                
+Women knitted winter sweater                              25.99             20 W
+Floral     SKU014   M Long  Round-Neck                                          
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+                                                                                
+SKU015   Blouse                                                                 
+Formal white blouse for women                             22.99             20 W
+White      SKU015   L Long  V-Neck                                              
+                                                                                
+SKU016   Tank-Tops                                                              
+Solid Tank Tops for women                                  5.99             25 W
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+Orange     SKU016   S Short High-Neck                                           
+                                                                                
+SKU017   High-Neck Sweater                                                      
+Women turtleneck drop shoulder waffle knit sweater        32.99             25 W
+Yellow     SKU017   M Long  High-Neck                                           
+                                                                                
+SKU018   Men T-shirts                                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+Basic casual cotton t-shirt for men                        5.99             25 M
+Red        SKU018   L Short Round-Neck                                          
+                                                                                
+SKU019   Men shirt                                                              
+Plaid print flap pocket shirt for men                     19.99             25 M
+Multicolor SKU019   M Long  Collar                                              
+                                                                                
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+SKU020   Hoodie                                                                 
+Sporty hoodie for men                                     22.99             35 M
+Apricot    SKU020   M Long  Hooded                                              
+                                                                                
+SKU021   Sweatshirt                                                             
+Coloblock letter patched detail sweatshirt for men        25.99             35 M
+Blue       SKU021   S Long  Crew-Neck                                           
+
+SKU      ITEM_NAME                                                              
+-------- -------------------------                                              
+ITEM_DESC                                          LISTED_PRICE AVAIL_QUANTITY G
+-------------------------------------------------- ------------ -------------- -
+ITEM_COLOR SKU      T SLEEV NECKLINE_T                                          
+---------- -------- - ----- ----------                                          
+                                                                                
+SKU022   Men zip-up sweatshirt                                                  
+Solid zip up funnel neck sweatshirt                       27.99             20 M
+Dark grey  SKU022   L Long  Round                                               
+                                                                                
+
+10 rows selected.
+
+=== Query 7 ===
+Display customers last name, zip and state
+
+LNAME                     ZIP   US                                              
+------------------------- ----- --                                              
+Doe                       12345 CA                                              
+Smith                     54321 NY                                              
+Jones                     67890 TX                                              
+White                     13579 FL                                              
+Brown                     24680 IL                                              
+Green                     98765 AZ                                              
+Black                     11223 WA                                              
+Jackson                   33445 GA                                              
+Taylor                    55667 MI                                              
+Vardanega                 77889 OR                                              
+Kumar                     99001 NC                                              
+
+LNAME                     ZIP   US                                              
+------------------------- ----- --                                              
+Lyons                     11234 SC                                              
+Hengehold                 22345 PA                                              
+Basto                     33456 NJ                                              
+Reid                      44567 UT                                              
+
+15 rows selected.
+
+=== Query 8 ===
+Displays email and last names of customers with exp date greater than jan 2024
+
+LNAME                     BILLING_EMAIL                                         
+------------------------- -------------------------                             
+Doe                       john@example.com                                      
+Smith                     jane@example.com                                      
+Jones                     alice@example.com                                     
+White                     michael@example.com                                   
+Brown                     sarah@example.com                                     
+Green                     emily@example.com                                     
+Black                     david@example.com                                     
+Jackson                   sophia@example.com                                    
+Taylor                    matthew@example.com                                   
+Vardanega                 olivia@example.com                                    
+Kumar                     ethan@example.com                                     
+
+LNAME                     BILLING_EMAIL                                         
+------------------------- -------------------------                             
+Lyons                     ava@example.com                                       
+Hengehold                 noah@example.com                                      
+Basto                     isabella@example.com                                  
+
+14 rows selected.
