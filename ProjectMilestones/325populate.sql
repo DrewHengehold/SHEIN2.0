@@ -11,17 +11,60 @@
 */
 
 
+DELETE *
+FROM new_user;
+
+DELETE * 
+FROM customer_profile;
+
+DELETE *
+FROM payment_info;
+
+DELETE *
+FROM addy;
+
+DELETE * 
+FROM billing;
+
+DELETE *
+FROM shipping;
+
+DELETE * 
+FROM orders;
+
+DELETE *
+FROM shipping;
+
+DELETE *
+FROM shipment;
+
+DELETE *
+FROM catalog_items;
+
+DELETE *
+FROM bottoms;
+
+DELETE *
+FROM tops;
+
+DELETE * 
+FROM shoes;
+
+DELETE *
+FROM line_items;
+
+
 /*
     new_user - Drew
 */
 INSERT INTO new_user
-VALUES('forrest_reid', 'ForestIsTheBest', 'ADMIN');
+VALUES('forrest_reid', 'ForrestIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
 VALUES('drew_hengehold', 'DrewIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
-VALUES('cosette_basto', 'CossetteIsTheBest', 'ADMIN');
+VALUES('cosette_basto', 'CosetteIsTheBest', 'ADMIN');
 
 INSERT INTO new_user
 VALUES('shyna_kumar', 'ShynaIsTheBest', 'ADMIN');
@@ -60,10 +103,10 @@ INSERT INTO new_user
 VALUES('emily_green', 'GreenTheApple', 'CUSTOMER');
 
 /* 
-    forrest - INSERT INTO customer profiles
+    forrest - customer_profiles
 
-    Customer_Profil
-    foreign key (user_name) refrences User
+    customer_profiles
+    foreign key (user_name) refrences new_user
 */
 INSERT INTO customer_profile
 VALUES ('C00001', 'john_doe', 'John', 'Doe', '1234567890', 'john.doe@email.com');
@@ -111,7 +154,7 @@ INSERT INTO customer_profile
 VALUES ('C00015', 'forrest_reid', 'Forrest', 'Reid', '4443332222', 'forrest.reid@email.com');
 
 /*
- Jacky creation - Payment info Insert statements 
+ Jacky - Payment info
 
  payment_info
     foreign key (customer_id) refrences Customer_Profile(CUSTOMER_ID)
