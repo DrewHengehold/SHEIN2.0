@@ -7,32 +7,34 @@ start 325populate.sql
 start 325queries.sql
 
 -- Spool commands
-spool 325report2-results.txt
+spool 325report1-results.txt
 
 /*
     Report 2: Top Selling Items
-    Purpose: Display the top-selling catalog items based on the quantity sold
+    Purpose: Display the gross amount sold from each item, as well as the person it was sold to
 */
 
--- Column formatting
-COLUMN item_name HEADING 'Item Name' FORMAT A30;
-COLUMN quantity_sold HEADING 'Quantity Sold' FORMAT 999,999;
+-- Title at top of page
 
--- Query for the report
-SELECT ci.item_name, SUM(li.quantity) quantity_sold
-FROM catalog_items ci
-JOIN line_items li ON ci.sku = li.sku
-GROUP BY ci.item_name
-ORDER BY quantity_sold DESC;
+ttitle 'Total Gross Value'
+
+-- Column formatting
+COLUMN item_name HEADING 'Item Name' FORMAT A8;
+COLUMN Name Heading 'Name' Format A20;
+COLUMN price HEADING 'Price' FORMAT 99,999;
 
 -- Break command to separate items by name
 BREAK ON item_name SKIP 1;
 
--- Compute command for total quantity sold
-COMPUTE SUM OF quantity_sold;
+-- Compute the total amount sold
+compute sum label 'Total Price' of Price on item_name;
 
--- Reset formatting settings
-CLEAR COLUMNS;
+-- Query for the report
+SELECT item_name, lname || ', ' || fname "Name", price
+FROM catalog_items, line_items, orders, customer_profile
+WHERE catalog_items.sku = line_items.sku AND line_items.order_id = orders.order_id 
+    AND customer_profile.customer_id = customer_profile.customer_id
+ORDER BY price DESC;
 
--- Spool off
+--spool off
 spool off
