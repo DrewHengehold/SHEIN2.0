@@ -60,7 +60,7 @@ from addy, customer_Profile
 where addy.customer_id = customer_profile.customer_id;
 
 prompt === Query 8 ===
-prompt Displays customers with exp date greater than jan 2024 email and last name
+prompt Displays email and last names of customers with exp date greater than jan 2024
 
 select lname, billing_email
 from customer_profile, payment_info
