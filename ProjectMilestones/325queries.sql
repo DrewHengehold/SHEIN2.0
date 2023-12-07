@@ -21,11 +21,11 @@ from bottoms, catalog_items
 where bottoms.SKU = catalog_items.SKU AND material = 'Cotton';
 
 prompt === Query 3 ===
-prompt Display customer Id, last name of all shiped products
+prompt Display customer id and date ordered of items shiped
 
-select cust_id,lname, order_states
-from orders, customer_profile
-where orders.customer_id = customer_profile.customer_id AND order_states = 'shiped';
+select customer_id, date_ordered
+from orders
+where order_states = 'SHIPPED';
 
 
 prompt === Query 4 ===
@@ -65,6 +65,5 @@ prompt Displays email and last names of customers with exp date greater than jan
 select lname, billing_email
 from customer_profile, payment_info
 where customer_profile.customer_id = payment_info.customer_id AND exp_date > '01/24';
-
 
 spool off
